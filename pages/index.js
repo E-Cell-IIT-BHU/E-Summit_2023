@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Footer from "../components/footer";
 import Header from "../components/cardcomponent/Header";
-import Navbar from "../Components/Navbar";
+import Navbar from "../components/Navbar";
+import HeaderMain from "../components/header/header"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         />
       </Head>
       <Navbar />
+      <HeaderMain/>
       <Header />
       <Footer />
     </div>

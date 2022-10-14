@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './header.module.css'
+import styles from './header.module.scss'
 
 function header() {
     return (
@@ -8,7 +8,6 @@ function header() {
                 backgroundColor: "#ffffff",
             }}>
             <header className={styles.header}>
-                <nav className={styles.navbar}>NAVBAR</nav>
                 <div className={styles.container}>
                     <div className={styles.row}>
                         <div className={styles.column1}>
@@ -33,9 +32,9 @@ function header() {
                                         <button className={styles.button1}>Click Me &nbsp; &gt;</button>
                                     </div>
                                 </main>
-                                <span>
+                                <div className={styles.footer}> 
                                     Join Our Work Team Now
-                                </span>
+                                </div>
                             </div>
                         </div>
                         <div className={styles.column2}>
