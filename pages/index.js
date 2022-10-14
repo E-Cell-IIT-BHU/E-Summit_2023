@@ -3,6 +3,7 @@ import Image from "next/image";
 import Footer from "../components/footer";
 import styles from "../styles/Home.module.css";
 import Header from "../components/cardcomponent/Header";
+import HeaderMain from "../components/header/header";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           crossOrigin="anonymous"
         />
       </Head>
+      <HeaderMain/>
       <Header />
       <Footer />
     </div>
