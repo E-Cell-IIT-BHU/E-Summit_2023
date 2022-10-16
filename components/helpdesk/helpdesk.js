@@ -12,8 +12,6 @@ function Helpdesk() {
 
    setSelected(i)
   }
-
-
   return (
     <section className={styles.about_us}>
 
@@ -56,19 +54,19 @@ function Helpdesk() {
 const data = [
   {
     question:'How can I register?',
-    answer:'We have world class engineers and material that’s enough to provide you the best industrial business solution since 1980s with proud.'
+    answer:"We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud."
   },
   {
     question:'What are the main theme features ?',
-    answer:'We have world class engineers and material that’s enough to provide you the best industrial business solution since 1980s with proud.'
+    answer:"We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud."
   },
   {
     question:'Is it free or will be charged in future ?',
-    answer:'We have world class engineers and material that’s enough to provide you the best industrial business solution since 1980s with proud.'
+    answer:"We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud."
   },
   {
     question:'What are the main theme features ?',
-    answer:'We have world class engineers and material that’s enough to provide you the best industrial business solution since 1980s with proud.'
+    answer:"We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud."
   }
 ]
 
