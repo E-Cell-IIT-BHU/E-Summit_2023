@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 // import gsap from 'gsap'
 import styles from './helpdesk.module.scss';
+import Image from "next/image";
+
 
 function Helpdesk() {
   const [selected, setSelected] = useState(null)
@@ -42,7 +44,8 @@ function Helpdesk() {
                  </div>
             </div>
             <div className={styles.about_col} >
-            <img src={"https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/young-people.jpg"} alt="this is an image" />
+            <Image src={"https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/young-people.jpg"}    width="455"
+        height="770" alt="image" />
             </div>
         </div>
     </section>
