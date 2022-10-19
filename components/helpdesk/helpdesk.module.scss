@@ -1,6 +1,6 @@
 .row{
     margin-top: 5px;
-    padding: 5% 5% 5% 9%;
+    padding: 5% 5% 5% 10%;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -9,7 +9,7 @@
 @media (max-width:770px){
     .row{
         flex-direction: column;
-       
+      
     }
    
 }
@@ -17,7 +17,7 @@
     width: 90%;
     margin: auto;
     padding-top: 50px;
-    padding-bottom: 50px;
+    // padding-bottom: 30px;
 }
 .about_col{
     flex-basis: 45%;
@@ -41,18 +41,9 @@
     margin-bottom: 60px;
     pointer-events: none;
 }
-.about_col img {
-    background-repeat: no-repeat;
-    width: 80%;
-    height: 100%;
-    padding-left: 6%;
-    margin-left: 20px;
-}
-
 @media (max-width:770px){
     .about_col img{
        scale: (0.8);
-     
     }
 }
 .question {
