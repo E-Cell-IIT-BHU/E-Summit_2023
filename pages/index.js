@@ -3,6 +3,8 @@ import Footer from "../components/footer";
 import Header from "../components/cardcomponent/Header";
 import Navbar from "../components/Navbar";
 import HeaderMain from "../components/header/header"
+import Helpdesk from "../components/helpdesk/helpdesk";
+import Testimonial from "../components/helpdesk/testimonial";
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
       <Navbar />
       <HeaderMain/>
       <Header />
+      <Helpdesk/>
+      <Testimonial/>
       <Footer />
     </div>
   );
