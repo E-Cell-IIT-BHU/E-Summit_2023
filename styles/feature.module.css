@@ -1,0 +1,344 @@
+.maincontainer {
+  position: relative;
+  margin-top: 0;
+  width: 100%;
+  padding: 2rem;
+  padding-bottom: 0;
+  height: 38rem;
+  background-color: #222222;
+  background-image: url("https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/planet-earth-space.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes pulse1 {
+  0% {
+    box-shadow: 0 0 0 0px rgba(238, 118, 70, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+@keyframes pulse2 {
+  0% {
+    box-shadow: 0 0 0 0px rgba(238, 118, 70, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
+@keyframes pulse3 {
+  0% {
+    box-shadow: 0 0 0 0px rgba(238, 118, 70, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+  }
+}
+
+.plus {
+  cursor: pointer;
+  width: fit-content;
+  margin: 5rem;
+  margin-top: 0;
+  color: white;
+  padding: 0.2rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  background-color: rgb(238, 118, 70);
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 0rem rgb(238, 118, 70);
+
+  animation: pulse1 1s infinite;
+  animation: pulse2 2s infinite;
+  animation: pulse3 3s infinite;
+}
+.info {
+  margin-left: 2rem;
+  position: absolute;
+  z-index: 1;
+  display: none;
+
+  transition: 2s;
+  transition-timing-function: ease;
+}
+.info1 {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  left: 0rem;
+  margin-left: 2rem;
+
+  padding: 1rem;
+  width: 20rem;
+  background-color: #222222;
+  color: #9b9b9b;
+  border-radius: 0.3rem;
+}
+.info2 {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  right: 2rem;
+  top: 1rem;
+
+  padding: 1rem;
+  width: 20rem;
+  background-color: #222222;
+  color: #9b9b9b;
+  border-radius: 0.3rem;
+}
+.info3 {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+
+  left: 1rem;
+  bottom: 2rem;
+  padding: 1rem;
+  width: 20rem;
+  background-color: #222222;
+  color: #9b9b9b;
+  border-radius: 0.3rem;
+}
+.info4 {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  bottom: 1rem;
+  display: inline-block;
+  padding: 1rem;
+  width: 20rem;
+  background-color: #222222;
+  color: #9b9b9b;
+  border-radius: 0.3rem;
+}
+.info5 {
+  position: absolute;
+  z-index: 1;
+  right: -10%;
+  top: -10rem;
+  display: inline-block;
+
+  margin-left: 2rem;
+
+  padding: 1rem;
+  width: 20rem;
+  background-color: #222222;
+  color: #9b9b9b;
+  border-radius: 0.3rem;
+}
+
+.div1 {
+  position: absolute;
+  left: 8%;
+  top: 20%;
+}
+.div2 {
+  position: absolute;
+  right: 8%;
+  top: 20%;
+}
+.div3 {
+  position: absolute;
+  left: 20%;
+  top: 65%;
+}
+.div4 {
+  position: absolute;
+  right: 20%;
+  top: 65%;
+}
+.div5 {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+}
+.num h1 {
+  text-align: center;
+  font-size: 12rem;
+  color: #ffffff33;
+}
+.num p {
+  text-align: center;
+  color: #ffffff3b;
+}
+.hidenum {
+  display: none;
+}
+@media screen and (min-width: 1020px) and (max-width: 1430px) {
+  .maincontainer {
+    height: 35rem;
+  }
+  .div5 {
+    bottom: 12%;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .maincontainer {
+    height: 25rem;
+  }
+  .div5 {
+    bottom: 12%;
+  }
+  .num h1 {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  .maincontainer {
+    height: 20rem;
+  }
+  .div5 {
+    bottom: 12%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .maincontainer {
+    height: 15rem;
+  }
+  .num h1 {
+    font-size: 4rem;
+  }
+  .num p {
+    font-size: 1rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .inf {
+    width: 10rem;
+    padding: 0.6rem;
+    font-size: 0.6rem;
+  }
+  .inf hr {
+    margin: 0.3rem 0;
+  }
+  .inf p {
+    margin-bottom: 0;
+  }
+
+  .info5 {
+    right: -3rem;
+    top: -4.5rem;
+  }
+
+  .div5 {
+    bottom: 8%;
+  }
+  .div1 {
+    left: 0;
+  }
+  .div2 {
+    right: 0;
+  }
+  .div3 {
+    top: 50%;
+    left: 10%;
+  }
+  .div4 {
+    top: 50%;
+    right: 10%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .maincontainer {
+    height: 10rem;
+  }
+
+  .div1 {
+    left: -2.5rem;
+  }
+  .div2 {
+    right: -2.5rem;
+  }
+  .div3 {
+    left: 0;
+    top: 55%;
+  }
+  .div4 {
+    right: 0;
+    top: 55%;
+  }
+  .num h1 {
+    font-size: 2.5rem;
+  }
+  .num p {
+    font-size: 0.4rem;
+  }
+  .title {
+    font-size: 0.9rem;
+  }
+  .inf {
+    width: 10rem;
+    padding: 0.3rem;
+    font-size: 0.6rem;
+  }
+  .inf hr {
+    margin: 0.3rem 0;
+  }
+  .inf p {
+    margin-bottom: 0;
+  }
+  .info4 {
+    right: 1.8rem;
+    top: -3rem;
+  }
+  .info5 {
+    right: -3rem;
+    top: -4.5rem;
+  }
+}
+@media screen and (max-width: 275px) {
+  .maincontainer {
+    height: 8rem;
+  }
+  .num h1 {
+    font-size: 1rem;
+  }
+  .num p {
+    font-size: 0.4rem;
+    margin: 0;
+  }
+  .div3 {
+    left: -10%;
+    top: 50%;
+  }
+  .div4 {
+    right: -10%;
+    top: 50%;
+  }
+}
+@media screen and (max-width: 230px) {
+  .maincontainer {
+    overflow: scroll;
+  }
+  .num h1 {
+    font-size: 1.5rem;
+  }
+  .num p {
+    font-size: 0.4rem;
+  }
+
+  .div1 {
+    left: -3.8rem;
+  }
+  .div2 {
+    left: 6rem;
+  }
+  .div3 {
+    left: -2rem;
+  }
+  .div4 {
+    left: 4rem;
+  }
+  .div5 {
+    left: 0rem;
+  }
+}
