@@ -13,20 +13,20 @@
     }
    
 }
-.about_us{
+.container{
     width: 90%;
     margin: auto;
     padding-top: 50px;
     // padding-bottom: 30px;
 }
-.about_col{
+.col{
     flex-basis: 45%;
 }
-.about_col h1{
+.col h1{
    font-weight: 650;
     // padding: 30px 2px;
 }
-.about_col p{
+.col p{
    text-align: justify;
 }
 .sub_heading{
@@ -42,7 +42,7 @@
     pointer-events: none;
 }
 @media (max-width:770px){
-    .about_col img{
+    .col img{
        scale: (0.8);
     }
 }
