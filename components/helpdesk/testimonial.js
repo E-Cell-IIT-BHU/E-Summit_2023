@@ -8,11 +8,11 @@ const Testimonial = () => {
   const zoomInProperties = {
     indicators: true,
     // scale: 1.2,
-    duration: 3000,
+    duration: 1000,
     transitionDuration: 100,
     infinite: true,
     prevArrow: (
-      <div style={{ width: "30px", marginLeft: "48%", cursor: "pointer" }}>
+      <div style={{ width: "30px", marginLeft: "0px", cursor: "pointer" }}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -23,7 +23,7 @@ const Testimonial = () => {
       </div>
     ),
     nextArrow: (
-      <div style={{ width: "30px", marginLeft: "-30px", cursor: "pointer" }}>
+      <div style={{ width: "30px", marginLeft: "30px", cursor: "pointer" }}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -38,24 +38,26 @@ const Testimonial = () => {
     <>
       <section className={styles.container}>
         <div className={styles.row}>
-          <div>
-            {" "}
+          <div className={styles.col} id={styles.id1}>
             <p>CLIENTS OPINION</p>
+          <h1>What Our <br/> Clients said</h1>
+          {/* <h1>Clients said</h1> */}
           </div>
-          <h1>What Our</h1>
-          <h1>Clients said</h1>
-        </div>
+       
+          <div className={styles.col}>
         <Zoom {...zoomInProperties}>
           {data.map((item, i) => (
-            <div key={i}>
-              <div className={styles.col}>
+         
+              <div key={i}>
                 <Image src={item.imgurl} width="70" height="70" alt="image" />
                 <h3>{item.name}</h3>
                 <p>{item.desc}</p>
-              </div>
+            
             </div>
           ))}
         </Zoom>
+        </div>
+        </div>
       </section>
     </>
   );
