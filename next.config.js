@@ -2,9 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  images:{
+  images: {
     domains: ["crust.winsomethemes.com"],
-  }
-}
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

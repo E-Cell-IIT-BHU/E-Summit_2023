@@ -1,7 +1,7 @@
 import style from ".././styles/layoutcss.module.css";
 import { useEffect, useState } from "react";
 
-const layout = () => {
+const Layout = () => {
   const [count, setCount] = useState("0");
   const [count1, setCount1] = useState("0");
   const [count2, setCount2] = useState("0");
@@ -54,36 +54,32 @@ const layout = () => {
   }, [number, duration]);
 
   function numAnimation(num1, num2) {
-    useEffect(() => {
-      let start = 0;
-      const end = parseInt(num1.substring(0, 3));
+    let start = 0;
+    const end = parseInt(num1.substring(0, 3));
 
-      if (start === end) return;
-      let totalMilSecDur = parseInt(2);
-      let incrementTime = (totalMilSecDur / end) * 1000;
-      let timer = setInterval(() => {
-        start += 1;
-        setCount1(String(start) + num1.substring(3));
-        if (start === end) clearInterval(timer);
-      }, incrementTime);
-    }, [num1, num2]);
+    if (start === end) return;
+    let totalMilSecDur = parseInt(2);
+    let incrementTime = (totalMilSecDur / end) * 1000;
+    let timer = setInterval(() => {
+      start += 1;
+      setCount1(String(start) + num1.substring(3));
+      if (start === end) clearInterval(timer);
+    }, incrementTime);
   }
   function numAnimation1(num1, num2) {
-    useEffect(() => {
-      let start = 0;
+    let start = 0;
 
-      const end = parseInt(num1.substring(0, 3));
+    const end = parseInt(num1.substring(0, 3));
 
-      if (start === end) return;
-      let totalMilSecDur = parseInt(2);
-      let incrementTime = (totalMilSecDur / end) * 1000;
+    if (start === end) return;
+    let totalMilSecDur = parseInt(2);
+    let incrementTime = (totalMilSecDur / end) * 1000;
 
-      let timer = setInterval(() => {
-        start += 1;
-        setCount2(String(start) + num1.substring(3));
-        if (start === end) clearInterval(timer);
-      }, incrementTime);
-    }, [num1, num2]);
+    let timer = setInterval(() => {
+      start += 1;
+      setCount2(String(start) + num1.substring(3));
+      if (start === end) clearInterval(timer);
+    }, incrementTime);
   }
 
   return (
@@ -242,4 +238,4 @@ const layout = () => {
   );
 };
 
-export default layout;
+export default Layout;
