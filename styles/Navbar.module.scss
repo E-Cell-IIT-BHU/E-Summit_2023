@@ -1,17 +1,16 @@
 .app__navbar {
   width: 100%;
-  
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-margin: 0 2rem;
+  margin: 0 2rem;
   padding: 1rem 2rem;
-//   background: rgba(255, 255, 255, 0.25);
+  //   background: rgba(255, 255, 255, 0.25);
   // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(4px);
-//   border: 1px solid rgba(255, 255, 255, 0.18);
+  //   border: 1px solid rgba(255, 255, 255, 0.18);
   z-index: 2;
 }
 
@@ -65,19 +64,19 @@ margin: 0 2rem;
 
       display: inline-block;
       position: relative;
-      &:after{
-        content: '';
+      &:after {
+        content: "";
         position: absolute;
         width: 100%;
         transform: scaleX(0);
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: rgb(235,136,70);
+        background-color: rgb(235, 136, 70);
         transform-origin: bottom right;
         transition: transform 0.3s ease-out;
       }
-      &:hover:after{
+      &:hover:after {
         transform: scaleX(1);
         transform-origin: bottom left;
       }
@@ -89,7 +88,6 @@ margin: 0 2rem;
       //   transition:transform  0.3s ease-out;
       // }
     }
-    
 
     &:hover {
       div {
@@ -118,7 +116,7 @@ margin: 0 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(235,136,70);
+  background-color: rgb(235, 136, 70);
 
   svg {
     width: 70%;
