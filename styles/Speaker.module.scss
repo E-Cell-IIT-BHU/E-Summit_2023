@@ -1,0 +1,82 @@
+.speaker_container{
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.heading{
+    font-size: 5rem;
+    color: #E9F0F4;
+    font-family: Blinker;
+    border-bottom: 3px solid #ddbd8d;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.box{
+    width: 90%;
+    margin: auto;
+    height: fit-content;
+}
+.speaker{
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 15%;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+
+.image_overlay,
+.speaker:after {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    
+}
+
+.speaker:after{
+    content: '';
+    top: 0;
+    height: 100%;
+    transition: .5s;
+}
+
+.speaker:hover:after{
+    background: linear-gradient(to bottom , rgba(16, 16, 15, 0.01) 1%,  rgba(2, 2, 2, 0.4) 25%,  rgba(4, 4, 4, 0.7) 50%,  rgba(8, 8, 8, 0.8) 75%,  rgba(6, 6, 6, 0.9) 100%, );
+}
+
+.image_overlay{
+    padding: 20px;
+    margin-bottom: 20px;
+    bottom: 0;
+    z-index: 1;
+    transition: all .5s cubic-bezier(.13,.62,.81,.91) 0s;
+    transform: translateY(140px);
+}
+
+.image_overlay h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.image_overlay a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+}
+.image_overlay a:hover{
+    color: palevioletred;
+}
+
+.speaker:hover .image_overlay{
+    transform: translateY(0);
+}
