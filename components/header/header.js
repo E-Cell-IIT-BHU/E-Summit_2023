@@ -14,7 +14,7 @@ function header() {
             <div className={styles.column1}>
               <div className={styles.content}>
                 <div className={styles.heading}>
-                  E-SUMMIT &apos;23
+                  E-SUMMIT '23
                   <br />
                   <span> for digital &nbsp; </span>
                   <span>
@@ -27,10 +27,9 @@ function header() {
                 </div>
                 <main>
                   <p>
-                    E-Summit&apos;23 will present rays of hope so dazzling that
-                    they penetrate even the darkness that veils our eyes. The
-                    summit is being organized on 5th and 6th February in hybrid
-                    mode.
+                    E-Summit`22 will present rays of hope so dazzling that they
+                    penetrate even the darkness that veils our eyes. The summit
+                    is being organized on 5th and 6th February in hybrid mode.
                   </p>
                   <div className={styles.row}>
                     <button className={styles.button1}>
