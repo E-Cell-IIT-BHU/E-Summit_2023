@@ -10,14 +10,14 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className={s.app__navbar}>
+    <nav className={s.app__navbar} >
       <div className={s.app__navbar_logo}>
         <Image src={logo} alt="logo" />
       </div>
       <ul className={s.app__navbar_links}>
         {["Speaker", "Events", "Workshops", "Sponsors", "Team"].map((item) => (
           <li className={s.app__flex} key={`link-${item}`}>
-            <a href="#">{item}</a>
+            <a href={`/${item}`}>{item}</a>
           </li>
         ))}
       </ul>
