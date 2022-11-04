@@ -55,7 +55,6 @@ const Team = () => {
             <h2
               style={{
                 fontSize: "1.5rem",
-                color: "black",
                 textAlign: "center",
               }}
             >
@@ -66,7 +65,6 @@ const Team = () => {
             <h2
               style={{
                 fontSize: "2rem",
-                color: "black",
                 textAlign: "center",
                 fontWeight: "bold",
                 margin: "90px auto 30px auto",
