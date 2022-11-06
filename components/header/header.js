@@ -14,7 +14,7 @@ function header() {
             <div className={styles.column1}>
               <div className={styles.content}>
                 <div className={styles.heading}>
-                  E-SUMMIT '23
+                  E-SUMMIT &apos;23
                   <br />
                   <span> for digital &nbsp; </span>
                   <span>
