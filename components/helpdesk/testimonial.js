@@ -12,10 +12,10 @@ const Testimonial = () => {
     transitionDuration: 100,
     infinite: true,
     prevArrow: (
-      <div style={{ width: "30px", marginLeft: "0px", cursor: "pointer" }}>
+      <div style={{ width: "30px", marginLeft: "0px", cursor: "pointer" }} className={styles.prevArrow}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
+          viewBox="0 0 612 612"
           fill="#2e2e2e"
         >
           <path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z" />
@@ -23,10 +23,10 @@ const Testimonial = () => {
       </div>
     ),
     nextArrow: (
-      <div style={{ width: "30px", marginLeft: "30px", cursor: "pointer" }}>
+      <div style={{ width: "30px",marginLeft: "-30%", cursor: "pointer" }} className={styles.nextArrow}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
+          viewBox="0 0 612 612"
           fill="#2e2e2e"
         >
           <path d="M512 256L270 42.6v138.2H0v150.6h270v138z" />
@@ -50,6 +50,7 @@ const Testimonial = () => {
          
               <div key={i}>
                 <Image src={item.imgurl} width="70" height="70" alt="image" />
+                {/* <img src={item.imgurl} width="70" height="70" alt="image" /> */}
                 <h3>{item.name}</h3>
                 <p>{item.desc}</p>
             

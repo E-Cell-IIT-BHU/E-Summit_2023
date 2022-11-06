@@ -14,26 +14,25 @@ function header() {
             <div className={styles.column1}>
               <div className={styles.content}>
                 <div className={styles.heading}>
-                  E-SUMMIT '23
+                 Ultimate theme for
                   <br />
-                  <span> for digital &nbsp; </span>
+                  <span> digital &nbsp; </span>
                   <span>
-                    <b>inspiration</b>
-                    <b>unique</b>
-                    <b>market</b>
-                    <b>identity</b>
+                    <b  className={styles.diffText}>inspiration</b>
+                    <b  className={styles.diffText}>unique</b>
+                    <b  className={styles.diffText}>market</b>
+                    <b  className={styles.diffText}>identity</b>
                   </span>
                   <hr />
                 </div>
                 <main>
-                  <p>
-                    E-Summit`22 will present rays of hope so dazzling that they
-                    penetrate even the darkness that veils our eyes. The summit
-                    is being organized on 5th and 6th February in hybrid mode.
+                  <p className={styles.para}>
+                    E-Summit`22 will present rays of hope so dazzling that theypenetrate even the darkness that veils our eyes.
                   </p>
                   <div className={styles.row}>
                     <button className={styles.button1}>
-                      Click Me &nbsp; &gt;
+                      {/* Explore Features &nbsp; &gt; */}
+                      Explore Features 
                     </button>
                   </div>
                 </main>

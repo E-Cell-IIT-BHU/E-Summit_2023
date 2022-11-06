@@ -4,7 +4,8 @@
   margin: auto;
   margin-top: 2%;
   padding-top: 50px;
-  background-color: rgb(81, 75, 75);
+  // background-color: rgb(81, 75, 75);
+  background-color: rgb(19, 18, 18);
   // display: inline;
 }
 .container h1 {
@@ -88,4 +89,12 @@
     margin-bottom: 15px;
     text-align: left;
   }
+}
+.nextArrow{
+  position: absolute;
+  bottom: -15%;
+}
+.prevArrow{
+  position: absolute;
+  bottom: -15%;
 }

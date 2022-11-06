@@ -24,7 +24,7 @@ export default function Home() {
       <Navbar />
       <HeaderMain />
       <Header />
-      <Testimonial />
+    
       <Helpdesk />
       <Layout />
       <Awesomefeature />
