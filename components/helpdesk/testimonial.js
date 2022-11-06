@@ -40,23 +40,23 @@ const Testimonial = () => {
         <div className={styles.row}>
           <div className={styles.col} id={styles.id1}>
             <p>CLIENTS OPINION</p>
-          <h1>What Our <br/> Clients said</h1>
-          {/* <h1>Clients said</h1> */}
+            <h1>
+              What Our <br /> Clients said
+            </h1>
+            {/* <h1>Clients said</h1> */}
           </div>
-       
+
           <div className={styles.col}>
-        <Zoom {...zoomInProperties}>
-          {data.map((item, i) => (
-         
-              <div key={i}>
-                <Image src={item.imgurl} width="70" height="70" alt="image" />
-                <h3>{item.name}</h3>
-                <p>{item.desc}</p>
-            
-            </div>
-          ))}
-        </Zoom>
-        </div>
+            <Zoom {...zoomInProperties}>
+              {data.map((item, i) => (
+                <div key={i}>
+                  <Image src={item.imgurl} width="70" height="70" alt="image" />
+                  <h3>{item.name}</h3>
+                  <p>{item.desc}</p>
+                </div>
+              ))}
+            </Zoom>
+          </div>
         </div>
       </section>
     </>
