@@ -14,9 +14,15 @@ function Helpdesk() {
     setSelected(i);
   };
   return (
+
     <section className={styles.about_us}>
       <div className={styles.row}>
         <div className={styles.about_col}>
+
+    <section className={styles.container}>
+      <div className={styles.row}>
+        <div className={styles.col}>
+
           <p className={styles.sub_heading}>CREATE UNLIMITED LAYOUTS</p>
           <h1>From our help desk</h1>
           <p className={styles.sub_para}>
@@ -27,7 +33,11 @@ function Helpdesk() {
             {data.map((item, i) => (
               <div key={i} className="item">
                 <div className={styles.question} onClick={() => toggle(i)}>
+
                   <h6 key={i}>{item.question}</h6>
+
+                  <h6>{item.question}</h6>
+
                   <svg
                     className={styles.hr}
                     width="10"
@@ -46,14 +56,24 @@ function Helpdesk() {
                 <div
                   className={selected == i ? styles.answer_show : styles.answer}
                 >
+
                   <p key={i}>{item.answer}</p>
+
+                  <p>{item.answer}</p>
+
                 </div>
               </div>
             ))}
           </div>
         </div>
+
         <div className={styles.about_col}>
           <Image
+
+        <div className={styles.col}>
+          <Image
+            className={styles.image}
+
             src={
               "https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/young-people.jpg"
             }
