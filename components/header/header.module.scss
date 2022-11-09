@@ -94,7 +94,7 @@
   }
 
   .content main {
-    max-width: 80%;
+    max-width: 100%;
 
     @media screen and (max-width: 1000px) {
       max-width: 100%;
@@ -260,4 +260,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+.maincontainer {
+  background-image: url("https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/geometrical-pattern.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.submaincontainer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
 }

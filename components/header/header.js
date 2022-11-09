@@ -7,16 +7,17 @@ function header() {
       style={{
         backgroundColor: "#ffffff",
       }}
-    >
+    >  <div className={styles.maincontainer}>
+    <div className={styles.submaincontainer}>
       <header className={styles.header}>
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={styles.column1}>
               <div className={styles.content}>
                 <div className={styles.heading}>
-                 Ultimate theme for
+                  E-SUMMIT '23
                   <br />
-                  <span> digital &nbsp; </span>
+                  <span> for digital &nbsp; </span>
                   <span>
                     <b  className={styles.diffText}>inspiration</b>
                     <b  className={styles.diffText}>unique</b>
@@ -45,6 +46,8 @@ function header() {
           </div>
         </div>
       </header>
+      </div>
+        </div>
     </div>
   );
 }
