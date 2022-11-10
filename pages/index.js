@@ -19,9 +19,10 @@ export default function Home() {
       <HeaderMain />
       <Header />
     
-      <Helpdesk />
+    
       <Layout />
       <Awesomefeature />
+      <Helpdesk />
       <Testimonial />
       <Footer />
     </div>

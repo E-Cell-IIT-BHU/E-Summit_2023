@@ -38,10 +38,9 @@ function header() {
                   {/* <hr/> */}
                     E-Summit`23 will present rays of hope so dazzling that they penetrate even the darkness that veils our eyes.
                   </p>
-                  {/* <div className={styles.row}> */}
+                
                     <button className={styles.button1}>
-                      {/* Explore Features &nbsp; &gt; */}
-                      Explore Features 
+                     <a> Explore Features </a>
                     </button>
                   {/* </div> */}
                 </main>
