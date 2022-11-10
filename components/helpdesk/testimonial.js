@@ -37,6 +37,8 @@ const Testimonial = () => {
   return (
     <>
       <section className={styles.container}>
+      <div className={styles.maincontainer}>
+    <div className={styles.submaincontainer}>
         <div className={styles.row}>
           <div className={styles.col} id={styles.id1}>
             <p>CLIENTS OPINION</p>
@@ -58,6 +60,8 @@ const Testimonial = () => {
             </div>
           ))}
         </Zoom>
+        </div>
+        </div>
         </div>
         </div>
       </section>
