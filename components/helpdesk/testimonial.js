@@ -9,7 +9,8 @@ const Testimonial = () => {
     indicators: true,
     // scale: 1.2,
     duration: 1000,
-    transitionDuration: 100,
+    loop:true,
+    transitionDuration: 1000,
     infinite: true,
     prevArrow: (
       <div style={{ width: "30px", marginLeft: "0px", cursor: "pointer" }} className={styles.prevArrow}>
