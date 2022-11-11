@@ -6,19 +6,17 @@ import { motion } from "framer-motion";
 import { data } from "../assets/data";
 
 const Speaker = () => {
-  
-
   const [filter, setFilter] = useState("All");
-  const [animateCard, setAnimateCard] = useState({ y: 0, x:0, opacity: 1 });
+  const [animateCard, setAnimateCard] = useState({ y: 0, x: 0, opacity: 1 });
 
   const [filterData, setFilterData] = useState(data);
 
   const handleWorkFilter = (item) => {
     setFilter(item);
-    setAnimateCard([{ y: 100,x:100, opacity: 0 }]);
+    setAnimateCard([{ y: 100, x: 100, opacity: 0 }]);
 
     setTimeout(() => {
-      setAnimateCard([{ y: 0, x:0,opacity: 1 }]);
+      setAnimateCard([{ y: 0, x: 0, opacity: 1 }]);
 
       if (item === "All") {
         setFilterData(data);
@@ -39,7 +37,10 @@ const Speaker = () => {
               key={index}
               onClick={() => handleWorkFilter(item)}
               className={s.item}
-              style= {{ backgroundColor : filter === item ? "	#DAA520" : "" , color : filter === item ? "white" : ''}}
+              style={{
+                backgroundColor: filter === item ? "	#DAA520" : "",
+                color: filter === item ? "white" : "",
+              }}
             >
               {item}
             </div>
@@ -78,7 +79,12 @@ const Speaker = () => {
       >
         <div className="row">
           {filterData.map((data, index) => (
-            <Profile key={index} img={data.src} name={data.name} linkedin={data.linkedin} />
+            <Profile
+              key={index}
+              img={data.src}
+              name={data.name}
+              linkedin={data.linkedin}
+            />
           ))}
         </div>
       </motion.div>
