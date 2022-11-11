@@ -1,9 +1,10 @@
 .HeaderContainer {
   /* background: url("/download.jpeg"); */
+  background: rgb(40, 38, 38);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 92%;
+  width: 100%;
   margin: auto;
 }
 .HeaderTitle {
@@ -47,7 +48,7 @@
   height: 0.4rem;
 }
 .CardsGroup::-webkit-scrollbar-track {
-  background: black;
+  background: rgb(67, 64, 64);
   background: -webkit-linear-gradient(red, orange, yellow);
 }
 .CardsGroup::-webkit-scrollbar-thumb {

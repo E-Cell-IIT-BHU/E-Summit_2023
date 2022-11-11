@@ -9,13 +9,14 @@ const Testimonial = () => {
     indicators: true,
     // scale: 1.2,
     duration: 1000,
-    transitionDuration: 100,
+    loop:true,
+    transitionDuration: 1000,
     infinite: true,
     prevArrow: (
-      <div style={{ width: "30px", marginLeft: "0px", cursor: "pointer" }}>
+      <div style={{ width: "30px", marginLeft: "0px", cursor: "pointer" }} className={styles.prevArrow}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
+          viewBox="0 0 612 612"
           fill="#2e2e2e"
         >
           <path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z" />
@@ -23,10 +24,10 @@ const Testimonial = () => {
       </div>
     ),
     nextArrow: (
-      <div style={{ width: "30px", marginLeft: "30px", cursor: "pointer" }}>
+      <div style={{ width: "30px",marginLeft: "-30%", cursor: "pointer" }} className={styles.nextArrow}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
+          viewBox="0 0 612 612"
           fill="#2e2e2e"
         >
           <path d="M512 256L270 42.6v138.2H0v150.6h270v138z" />
@@ -37,6 +38,8 @@ const Testimonial = () => {
   return (
     <>
       <section className={styles.container}>
+      <div className={styles.maincontainer}>
+    <div className={styles.submaincontainer}>
         <div className={styles.row}>
           <div className={styles.col} id={styles.id1}>
             <p>CLIENTS OPINION</p>
@@ -47,19 +50,24 @@ const Testimonial = () => {
           </div>
 
           <div className={styles.col}>
-            <Zoom {...zoomInProperties}>
-              {data.map((item, i) => (
-                <div key={i}>
-                  <Image src={item.imgurl} width="70" height="70" alt="image" />
-                  <h3>{item.name}</h3>
-                  <p>{item.desc}</p>
-                </div>
-              ))}
-            </Zoom>
-          </div>
+        <Zoom {...zoomInProperties}>
+          {data.map((item, i) => (
+         
+              <div key={i}>
+                <Image src={item.imgurl} width="70" height="70" alt="image" />
+                <h3>{item.name}</h3>
+                <p>{item.desc}</p>
+            
+            </div>
+          ))}
+        </Zoom>
+        </div>
+        </div>
+        </div>
         </div>
       </section>
     </>
+  
   );
 };
 const data = [

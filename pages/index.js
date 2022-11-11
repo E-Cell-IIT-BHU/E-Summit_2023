@@ -18,9 +18,11 @@ export default function Home() {
       <Navbar />
       <HeaderMain />
       <Header />
-      <Helpdesk />
+    
+    
       <Layout />
       <Awesomefeature />
+      <Helpdesk />
       <Testimonial />
       <Footer />
     </div>

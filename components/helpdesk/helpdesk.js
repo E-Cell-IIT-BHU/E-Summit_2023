@@ -15,6 +15,8 @@ function Helpdesk() {
   };
   return (
     <section className={styles.container}>
+      <div className={styles.maincontainer}>
+    <div className={styles.submaincontainer}>
       <div className={styles.row}>
         <div className={styles.col}>
           <p className={styles.sub_heading}>CREATE UNLIMITED LAYOUTS</p>
@@ -62,6 +64,8 @@ function Helpdesk() {
             height="770"
             alt="image"
           />
+        </div>
+      </div>
         </div>
       </div>
     </section>

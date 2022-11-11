@@ -1,104 +1,53 @@
-.header {
-  background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-  background-color: white;
-  color: white;
-  height: 100vh;
-  margin-bottom: 50px;
-
-  @media screen and (max-width: 500px) {
-    height: 90vh;
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.heading {
+   margin: 0; 
+   padding: 0; 
+   font-family: 'Poppins';
+   font-weight: 1600;
+   }
+   .para{
+    font-size: 24px;
+    color: rgb(167, 162, 162);
+    pointer-events: none;
+    letter-spacing: 1px;
+    text-align: justify;
   }
-
   .container {
-    margin: auto;
-    width: 70%;
-    height: 80%;
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-
-    @media screen and (max-width: 1050px) {
-      width: 90%;
-    }
-
-    @media screen and (max-width: 500px) {
-      width: 100%;
-    }
-  }
-
-  .row {
-    display: flex;
-    flex-direction: row;
-
-    @media screen and (max-width: 1000px) {
-      flex-direction: column;
-    }
-  }
-
-  .column1 {
-    padding: 60px 10px 100px 10px;
-    width: 60%;
-
-    @media screen and (max-width: 1000px) {
-      width: 100%;
-      padding: 30px 5px 10px 20px;
-    }
-  }
-
-  .column2 {
-    width: 40%;
-    padding-top: 2.5rem;
-
-    @media screen and (max-width: 1000px) {
-      width: 100%;
-    }
-
-    .image {
-      background-image: url("https://crust.winsomethemes.com/original/wp-content/uploads/sites/81/2021/07/ognl-splt-home.jpg");
-      background-size: cover;
-      width: 100%;
-      height: 100%;
-      margin: auto;
-      border-radius: 5%;
-
-      @media screen and (max-width: 1000px) {
-        height: 40vh;
-        width: 80%;
-        margin-top: 0;
-      }
-
-      @media screen and (max-width: 600px) {
-        display: none;
-      }
-    }
-  }
-
-  .content {
     width: 100%;
-    text-align: left;
+    height: 100%;
   }
-
-  .content main {
-    max-width: 80%;
-
-    @media screen and (max-width: 1000px) {
-      max-width: 100%;
+  .image{
+    border-radius: 5%;
+  }
+  .image:hover{
+    scale: (1.1);
+    transition: 2s ease-in-out;
+    border-radius: 5%;
+  }
+  @media (min-width: 770px) {
+    .header {
+     margin-bottom: 5%;
     }
   }
+.header {
+  color: white;
+  height: 100%;
+  font-family: 'Poppins';
+  overflow: hidden;
+  
 
   .heading {
     font-size: 3.504rem;
-    font-family: Lexend;
+    font-family: Poppins;
     font-weight: 600;
-    letter-spacing: -0.04em;
+    // letter-spacing: -0.04em;
 
     b {
       position: absolute;
       overflow: hidden;
       animation: animate 8s linear infinite;
       opacity: 0;
-      transition: ease-in;
+      transition: ease-in-out;
 
       &:nth-child(1) {
         animation-delay: 0s;
@@ -116,92 +65,55 @@
         animation-delay: 6s;
       }
     }
-
-    @media screen and (max-width: 1000px) {
-      font-size: 4.504rem;
-    }
-
-    @media screen and (max-width: 700px) {
-      font-size: 3.3rem;
-      font-weight: 600;
-    }
-
-    @media screen and (max-width: 500px) {
-      font-size: 2.9rem;
-    }
-
-    @media screen and (max-width: 350px) {
-      font-size: 2.8rem;
-    }
   }
 
   .content main p {
-    font-size: 1.25rem;
-    margin-top: 0;
-    margin-bottom: 2.25rem;
+    font-size: 1.05rem;
+    // font-size: 14px;
+    margin-top: 22%;
+    // margin-bottom: 2.25rem;
     font-weight: 400;
     font-family: objektiv-mk1, sans-serif;
-
-    @media screen and (max-width: 1000px) {
-      font-size: 1.6rem;
-    }
-
-    @media screen and (max-width: 700px) {
-      font-size: 1.2rem;
-      font-weight: 400;
-    }
-
-    @media screen and (max-width: 500px) {
-      font-size: 1.1rem;
-    }
-
-    @media screen and (max-width: 350px) {
-      font-size: 1rem;
+  }
+  @media (max-width: 1200px) {
+    .content main p{
+      margin-top: 25%;
     }
   }
-
+  .button1:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    scale: (1.1);
+  }
   .button1 {
+    border: none;
     color: white;
-    width: 50%;
+    width: 60%;
     background-color: transparent;
+    background-image: linear-gradient(to right,#2F39D3 0%,  #FF5B4A  100%);
     padding: 0.38rem 1.28rem;
+    font-family: 'Poppins';
     text-align: center;
-    font-size: 1.25rem;
-    font-family: Lexend;
+    font-size: 1.3rem;
+    // font-family: Lexend;
     font-weight: 500;
     letter-spacing: 0.02em;
     cursor: pointer;
     border-radius: 5px;
-    border: solid white 2px;
-
-    @media screen and (max-width: 1000px) {
-      font-size: 1.704rem;
-    }
-
-    @media screen and (max-width: 700px) {
-      font-size: 1rem;
-    }
-
-    @media screen and (max-width: 500px) {
-      width: 90%;
-      font-size: 1.5rem;
-      font-size: 500;
+  }
+  @media (max-width: 770px) {
+    .button1{
+      font-size: 14px;
     }
   }
 
   .footer {
-    width: 100%;
+    // width: 100%;
     margin-top: 1rem;
     font-size: 1.5rem;
-    font-size: 500;
+    letter-spacing: 1px;
+    // font-size: 500;
 
-    @media screen and (max-width: 500px) {
-      width: 100%;
-      margin-top: 2rem;
-      font-size: 1.5rem;
-      font-size: 500;
-      text-align: center;
-    }
   }
 }
 
@@ -232,4 +144,62 @@
     opacity: 0;
     transform: translateY((50px));
   }
+}
+.diffText{
+  background: linear-gradient(to right,#2F39D3 0%,  #FF5B4A  100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.maincontainer {
+  background-image: url("https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/dark-bg-3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.submaincontainer {
+  background-color: rgba(23, 22, 22, 0.8);
+  padding-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row {
+  margin-top: 10%;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0% 8%;
+}
+@media (max-width: 770px) {
+  .row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 770px) {
+  .image {
+    scale: (0.8);
+  }
+}
+.column {
+  flex-basis: 45%;
+overflow: hidden;
+  width: 50%;
+  padding: 2% 4%;
+  border-radius: 10px;
+  // margin-bottom: 5%;
+  // text-align: left;
+  text-align: left;
+  // background-color: rgb(71, 71, 71);
+}
+@media (max-width: 770px) {
+  .column {
+    width: 100%;
+  }
+}
+@media (max-width: 770px) {
+  .row {
+    margin-top: 15%;
+  }
+}
+.container{
+  background: transparent;
 }

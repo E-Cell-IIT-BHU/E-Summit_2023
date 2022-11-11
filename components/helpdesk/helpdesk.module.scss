@@ -1,10 +1,11 @@
 .row {
-  margin-top: 5px;
+  // margin-top: 5px;
   padding: 5% 5% 5% 10%;
   display: flex;
   justify-content: space-between;
   color: white;
-  background-color: rgb(50, 49, 49);
+  // background-color: rgb(50, 49, 49);
+  
 }
 @media (max-width: 770px) {
   .row {
@@ -12,9 +13,10 @@
   }
 }
 .container {
-  width: 90%;
+  width: 100%;
   margin: auto;
-  padding-top: 50px;
+  // padding-top: 50px;
+  // margin-bottom: 2%;
   // padding-bottom: 30px;
 }
 .col {
@@ -44,6 +46,7 @@
     scale: (0.8);
   }
 }
+
 .question {
   cursor: pointer;
 }
@@ -71,4 +74,15 @@
   max-height: 300px;
   font-size: 14px;
   color: rgb(167, 162, 162);
+}
+.maincontainer {
+  background-image: url("https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/geometrical-pattern.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.submaincontainer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
 }
