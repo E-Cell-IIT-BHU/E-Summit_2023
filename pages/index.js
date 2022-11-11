@@ -7,6 +7,7 @@ import Helpdesk from "../components/helpdesk/helpdesk";
 import Testimonial from "../components/helpdesk/testimonial";
 import Awesomefeature from "../components/Awesomefeature";
 import Layout from "../components/layout";
+import Workinfo from "../components/workinfo";
 export default function Home() {
   return (
     <div style={{ background: "black" }}>
@@ -18,9 +19,9 @@ export default function Home() {
       <Navbar />
       <HeaderMain />
       <Header />
-    
-    
+
       <Layout />
+      <Workinfo />
       <Awesomefeature />
       <Helpdesk />
       <Testimonial />

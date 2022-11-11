@@ -53,13 +53,13 @@ a {
   text-align: center;
   position: relative;
   width: 240px;
-   height: 360px;
+  height: 360px;
   margin: 20px;
 }
 
- .our-team img {
-   width: 800%;
- }
+.our-team img {
+  width: 800%;
+}
 .our-team .team-content .name {
   font-size: 18px;
   font-weight: 800;
@@ -83,11 +83,11 @@ a {
   justify-content: center;
   margin: 10px;
 }
- @media screen and (max-width: 1200px) {
-   .our-team {
-     width: 300px;
-   }
- }
+@media screen and (max-width: 1200px) {
+  .our-team {
+    width: 300px;
+  }
+}
 @media screen and (max-width: 1130px) {
   .our-team {
     margin-bottom: 30px !important;
@@ -108,7 +108,7 @@ a {
 @media screen and (max-width: 330px) {
   .our-team {
     margin-bottom: 30px !important;
-     width: 250px;
+    width: 250px;
   }
 }
 
@@ -193,11 +193,11 @@ a {
     font-size: 0.4rem;
   }
 }
-.col{
+.col {
   justify-content: space-around;
 }
 
-.select{
+.select {
   background-color: #1c1f1f;
   padding: 10px;
   font-weight: bold;
@@ -206,7 +206,6 @@ a {
   align-items: center;
   text-align: center;
 }
-
 
 .half {
   float: left;
@@ -220,6 +219,64 @@ a {
 
 .left {
   margin-right: 2%;
+}
+
+.workinfo {
+  background-color: #222222;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  min-height: 20rem;
+}
+
+.workCard {
+  position: relative;
+  margin: 1rem;
+  background-color: #282828;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.workCard .firstchild {
+  font-size: 4rem;
+  justify-content: center;
+  color: #686666;
+  font-weight: 800;
+}
+.workCard .secondchild {
+  color: white;
+  font-size: 3rem;
+  justify-content: center;
+}
+.workCard .secondsubchild {
+  font-size: 1rem;
+  color: #ffffff87;
+}
+
+.workCard:hover {
+  background-image: linear-gradient(120deg, #2f39d3 0%, #ff5b4a 100%);
+}
+@media screen and (max-width: 300px) {
+  .workCard .firstchild {
+    font-size: 2rem;
+
+    font-weight: 800;
+  }
+  .workCard .secondchild {
+    font-size: 1rem;
+  }
+  .workCard .secondsubchild {
+    font-size: 0.8rem;
+  }
+  .workCard {
+    height: 5rem;
+  }
 }
 
 @media (max-width: 480px) {
