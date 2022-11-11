@@ -104,36 +104,36 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <a className="btn btn-outline-light btn-floating m-1 text-white">
+                <a className="btn btn-floating m-1 text-white">
                   <FaInstagram className="social-icons"></FaInstagram>
                 </a>
                 <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
+                  className="btn btn-floating m-1 text-white iconBorder"
                   role="button"
                 >
                   {" "}
                   <FaFacebook className="social-icons"></FaFacebook>
                 </a>
                 <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
+                  className="btn btn-floating m-1 text-white"
                   role="button"
                 >
                   <FaLinkedin className="social-icons"></FaLinkedin>
                 </a>
                 <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
+                  className="btn btn-floating m-1 text-white"
                   role="button"
                 >
                   <FaTwitter className="social-icons"></FaTwitter>
                 </a>
                 <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
+                  className="btn btn-floating m-1 text-white"
                   role="button"
                 >
                   <FaYoutube className="social-icons"></FaYoutube>
                 </a>
                 <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
+                  className="btn hover-overlay hover-zoom hover-shadow btn-floating m-1 text-white"
                   role="button"
                 >
                   <FaDiscord className="social-icons"></FaDiscord>

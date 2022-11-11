@@ -13,6 +13,8 @@ import Ashwat from "../assets/team/2022-2023/Ashwat.jpg";
 import Divyansh from "../assets/team/2022-2023/Divyansh.jpg";
 import Shreya from "../assets/team/2022-2023/Shreya.JPG";
 import Vanshika from "../assets/team/2022-2023/Vanshika.jpg";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Accordion, AccordionSummary } from "@mui/material";
 import Navbar from "../components/Navbar";
 
 const Team = () => {
@@ -25,12 +27,7 @@ const Team = () => {
           <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <Navbar />
-        <div
-          className="container"
-          style={{
-            backgroundColor: "#181921"
-          }}
-        >
+        <div className="container" style={{marginTop:'70px'}}>
           <div className="row">
             <h1
               style={{
