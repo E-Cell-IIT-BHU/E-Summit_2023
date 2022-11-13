@@ -140,7 +140,7 @@
 .div2 {
   position: absolute;
   right: 8%;
-  top: 20%;
+  top: 18%;
 }
 .div3 {
   position: absolute;
@@ -158,7 +158,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  bottom: 0;
+  bottom: 3rem;
 }
 .num h1 {
   text-align: center;

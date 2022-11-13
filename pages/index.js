@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Footer from "../components/footer";
-import Header from "../components/cardcomponent/Header";
+
 import Navbar from "../components/Navbar";
 import HeaderMain from "../components/header/header";
 import Helpdesk from "../components/helpdesk/helpdesk";
@@ -8,6 +8,9 @@ import Testimonial from "../components/helpdesk/testimonial";
 import Awesomefeature from "../components/Awesomefeature";
 import Layout from "../components/layout";
 import Workinfo from "../components/workinfo";
+import Crustinfo from "../components/Crustinfo.jsx";
+import Discover from "../components/discover";
+
 export default function Home() {
   return (
     <div style={{ background: "black" }}>
@@ -18,13 +21,15 @@ export default function Home() {
       </Head>
       <Navbar />
       <HeaderMain />
-      <Header />
 
+      <Crustinfo />
+      <Discover />
       <Layout />
       <Workinfo />
       <Awesomefeature />
       <Helpdesk />
       <Testimonial />
+
       <Footer />
     </div>
   );

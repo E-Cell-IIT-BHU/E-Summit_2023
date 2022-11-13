@@ -1,10 +1,22 @@
 import React from "react";
+import { useState } from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-
+import AnimatedNumber from "animated-number-react";
 const workinfo = () => {
+  const [ct, setct] = useState(false);
+  const formatValue = (value) => value.toFixed(0);
   return (
-    <div className="workinfo">
+    <motion.div
+      initial={() => {
+        setct(false);
+      }}
+      whileInView={() => {
+        setct(true);
+      }}
+      viewport={{ once: false }}
+      className="workinfo"
+    >
       <Tilt>
         <motion.div
           className="workCard"
@@ -17,7 +29,7 @@ const workinfo = () => {
             <i class="bi bi-clock"></i>
           </div>
           <div className="secondchild">
-            50K
+            {ct && <AnimatedNumber value="50" formatValue={formatValue} />}K
             <div className="secondsubchild">Work Hours</div>
           </div>
         </motion.div>
@@ -27,8 +39,6 @@ const workinfo = () => {
           whileHover={{
             width: "17rem",
             height: "12rem",
-
-            zIndex: "2",
           }}
           className="workCard"
         >
@@ -36,7 +46,7 @@ const workinfo = () => {
             <i class="bi bi-person"></i>
           </div>
           <div className="secondchild">
-            740
+            {ct && <AnimatedNumber value="740" formatValue={formatValue} />}
             <div className="secondsubchild">Customers</div>
           </div>
         </motion.div>
@@ -46,8 +56,6 @@ const workinfo = () => {
           whileHover={{
             width: "17rem",
             height: "12rem",
-
-            zIndex: "2",
           }}
           className="workCard"
         >
@@ -55,7 +63,7 @@ const workinfo = () => {
             <i class="bi bi-files"></i>
           </div>
           <div className="secondchild">
-            60+
+            {ct && <AnimatedNumber value="60" formatValue={formatValue} />}+
             <div className="secondsubchild">Layouts</div>
           </div>
         </motion.div>
@@ -65,8 +73,6 @@ const workinfo = () => {
           whileHover={{
             width: "17rem",
             height: "12rem",
-
-            zIndex: "2",
           }}
           className="workCard"
         >
@@ -74,12 +80,12 @@ const workinfo = () => {
             <i class="bi bi-hdd-stack"></i>
           </div>
           <div className="secondchild">
-            375
+            {ct && <AnimatedNumber value="375" formatValue={formatValue} />}
             <div className="secondsubchild">Projects</div>
           </div>
         </motion.div>
       </Tilt>
-    </div>
+    </motion.div>
   );
 };
 

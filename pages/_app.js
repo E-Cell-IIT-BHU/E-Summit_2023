@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Head from "next/head";
 
+import { ParallaxProvider } from "react-scroll-parallax";
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -45,7 +46,9 @@ function MyApp({ Component, pageProps }) {
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossOrigin="anonymous"
       ></script>
-      <Component {...pageProps} />
+      <ParallaxProvider>
+        <Component {...pageProps} />
+      </ParallaxProvider>
     </>
   );
 }

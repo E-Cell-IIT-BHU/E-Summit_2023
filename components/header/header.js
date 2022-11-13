@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./header.module.scss";
 import Image from "next/image";
+import Tilt from "react-parallax-tilt";
 
 function header() {
   return (
@@ -50,8 +51,8 @@ function header() {
                     </div>
                   </div>
                 </div>
-                <div className={styles.column}>
-                  {/* <div className={styles.image}></div> */}
+                {/* <div className={styles.column}>
+               
 
                   <Image
                     className={styles.image}
@@ -62,6 +63,18 @@ function header() {
                     height="700"
                     alt="image"
                   />
+                </div> */}
+                <div className="portcontainer">
+                  <div className="portwomen">
+                    <Tilt>
+                      <Image
+                        src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/portrait-woman.jpg"
+                        width={500}
+                        height={500}
+                        className="womanimg"
+                      />
+                    </Tilt>
+                  </div>
                 </div>
               </div>
             </div>
