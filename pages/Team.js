@@ -26,8 +26,8 @@ const Team = () => {
           <meta name="robots" content="index, follow" />
           <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
-        <Navbar />
-        <div className="container" style={{marginTop:'70px'}}>
+        <Navbar/>
+        <div className="container" style={{paddingTop:'200px'}}>
           <div className="row">
             <h1
               style={{

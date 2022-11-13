@@ -101,45 +101,27 @@ const Footer = () => {
             <div className="row d-flex align-items-center">
               <div className="col-md-7 col-lg-8 text-center text-md-start">
                 <div className="p-3">
-                  © 2020 Copyright:
-                  <a className="text-white" href="https://mdbootstrap.com/">
-                    MDBootstrap.com
-                  </a>
+                  © 2020 Copyright: MDBootstrap.com
                 </div>
               </div>
               <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <a className="btn btn-outline-light btn-floating m-1 text-white">
+                <a>
                   <FaInstagram className="social-icons"></FaInstagram>
                 </a>
-                <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
-                  role="button"
-                >
+                <a>
                   {" "}
                   <FaFacebook className="social-icons"></FaFacebook>
                 </a>
-                <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
-                  role="button"
-                >
+                <a >
                   <FaLinkedin className="social-icons"></FaLinkedin>
                 </a>
-                <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
-                  role="button"
-                >
+                <a>
                   <FaTwitter className="social-icons"></FaTwitter>
                 </a>
-                <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
-                  role="button"
-                >
+                <a >
                   <FaYoutube className="social-icons"></FaYoutube>
                 </a>
-                <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
-                  role="button"
-                >
+                <a>
                   <FaDiscord className="social-icons"></FaDiscord>
                 </a>
               </div>
