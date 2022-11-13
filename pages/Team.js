@@ -13,6 +13,8 @@ import Ashwat from "../assets/team/2022-2023/Ashwat.jpg";
 import Divyansh from "../assets/team/2022-2023/Divyansh.jpg";
 import Shreya from "../assets/team/2022-2023/Shreya.JPG";
 import Vanshika from "../assets/team/2022-2023/Vanshika.jpg";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Accordion, AccordionSummary } from "@mui/material";
 import Navbar from "../components/Navbar";
 
 const Team = () => {
@@ -25,12 +27,7 @@ const Team = () => {
           <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <Navbar />
-        <div
-          className="container"
-          style={{
-            backgroundColor: "#181921",
-          }}
-        >
+        <div className="container" style={{marginTop:'70px'}}>
           <div className="row">
             <h1
               style={{
@@ -51,7 +48,7 @@ const Team = () => {
               GET TO KNOW THE TEAM OF E-CELL
             </h2>
           </div>
-          <div>
+          <div> 
             <h2
               style={{
                 fontSize: "2rem",
@@ -63,12 +60,7 @@ const Team = () => {
               UNDER THE GUIDANCE OF
             </h2>
             <div className="our-team" style={{ margin: "auto" }}>
-              <Image
-                src={prof}
-                className="img-responsive"
-                alt="team member"
-                style={{ width: "auto" }}
-              />
+              <Image src={prof} className="img-responsive" alt="team member" style={{width:'auto'}}/>
               <div className="team-content">
                 <h3 className="name">PROF. RAJNESH TYAGI</h3>
                 <span className="post">PROF. INCHARGE, E-CELL</span>
@@ -162,11 +154,7 @@ const Team = () => {
             </div>
             <div className="team-container-1">
               <div className="our-team">
-                <Image
-                  src={Tanya}
-                  className="img-responsive"
-                  alt="team member"
-                />
+                <Image src={Tanya} className="img-responsive" alt="team member" />
                 <div className="team-content">
                   <h3 className="name">TANYA GUPTA</h3>
                   <span className="post">BRANDING HEAD</span>
@@ -196,11 +184,7 @@ const Team = () => {
                 </div>
               </div>
               <div className="our-team">
-                <Image
-                  src={Parth}
-                  className="img-responsive"
-                  alt="team member"
-                />
+                <Image src={Parth} className="img-responsive" alt="team member" />
                 <div className="team-content">
                   <h3 className="name">PARTH GUPTA</h3>
                   <span className="post">SAP HEAD</span>
