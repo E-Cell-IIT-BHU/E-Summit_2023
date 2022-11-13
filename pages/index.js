@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 
 import Navbar from "../components/Navbar";
 import HeaderMain from "../components/header/header";
-import Helpdesk from "../components/helpdesk/helpdesk";
+// import Helpdesk from "../components/helpdesk/helpdesk";
 import Testimonial from "../components/helpdesk/testimonial";
 import Awesomefeature from "../components/Awesomefeature";
 import Layout from "../components/layout";
@@ -27,9 +27,13 @@ export default function Home() {
       <Layout />
       <Workinfo />
       <Awesomefeature />
-      <Helpdesk />
+      {/* <Helpdesk /> */}
       <Testimonial />
 
+      {/* <Helpdesk /> */}
+      <Layout />
+      <Awesomefeature />
+      <Testimonial />
       <Footer />
     </div>
   );

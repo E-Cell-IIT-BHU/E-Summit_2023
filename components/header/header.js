@@ -10,7 +10,6 @@ function header() {
         backgroundColor: "#ffffff",
       }}
     >
-      {" "}
       <div className={styles.maincontainer}>
         <div className={styles.submaincontainer}>
           <header className={styles.header}>
