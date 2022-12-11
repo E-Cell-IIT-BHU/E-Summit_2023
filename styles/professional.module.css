@@ -1,0 +1,110 @@
+.maincontainer{
+    background-color: #222222;
+    color: white;
+    padding-bottom: 4rem;
+}
+.subcontainer1{
+ padding-top: 2rem;
+   text-align: center;
+  color: #7a7a7a;
+}
+.subcontainer2{
+     width:40% ;
+     margin: auto;
+     font-size: 200%;
+     font-weight: 700;
+     text-align:center ;
+    
+}
+.subcontainer3{
+    display: flex;
+    justify-content: center;
+}
+.child1{
+ position:relative;
+ margin: 1rem;
+}
+.child11{
+    background-color: #282828;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: .4rem;
+    padding: 1rem;
+    position: absolute;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    left: auto;
+    left: 5%;
+    bottom: -1.5rem;
+    font-size: large;
+    font-weight: bolder;
+    transition: .5s ease;
+    
+}
+.child1:hover{
+    background-image: linear-gradient(180deg, #FF5B4A 0%, #2F39D3 100%);
+    
+}
+.child1:hover>.imgee{
+    opacity: .3;
+}
+.child1:hover> .child11{
+    bottom: 1rem;
+}
+.trending{
+    display: none;
+    border-radius: .3rem;
+    padding: .3rem;
+    border: 1px solid #FF5B4A;
+    margin-left:.2rem;
+    font-size: small;
+    background-color: #FF5B4A;
+}
+.child1:hover .trending{
+    display: inline;
+}
+@media screen and (max-width:1234px) {
+    .subcontainer2{
+       width: 50%;
+    }
+    
+}
+@media screen and (max-width:744px) {
+    .subcontainer2{
+       width: 70%;
+    }
+    
+}
+@media screen and (max-width:648px) {
+    .subcontainer3{
+        display: block;
+        width: fit-content;
+        margin: auto;
+        
+    }
+    .child1{
+        margin-bottom: 3rem;
+    }
+    .maincontainer{
+        padding-bottom: 2rem;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .subcontainer2{
+        font-size: 150%;
+    }
+}
+@media screen and (max-width:411px) {
+    .child1{
+       margin-left: 2rem;
+       margin-right: 2rem;
+    }
+
+}
+@media screen and (max-width:500px) {
+    .subcontainer2{
+        font-size: 150%;
+        width: 95%;
+    }
+}

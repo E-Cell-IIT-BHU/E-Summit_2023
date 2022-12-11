@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Footer from "../components/footer";
-
+import Professiondesign from "../components/Professiondesign"
 import Navbar from "../components/Navbar";
 import HeaderMain from "../components/header/header";
 // import Helpdesk from "../components/helpdesk/helpdesk";
@@ -32,6 +32,7 @@ export default function Home() {
       <Discover />
       <Layout />
       <Workinfo />
+      <Professiondesign/>
       <Awesomefeature />
       {/* <Helpdesk /> */}
       <Testimonial />
