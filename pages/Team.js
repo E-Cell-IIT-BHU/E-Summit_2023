@@ -27,7 +27,7 @@ const Team = () => {
           <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <Navbar />
-        <div className="container" style={{marginTop:'70px'}}>
+        <div className="container" style={{paddingTop:'100px'}}>
           <div className="row">
             <h1
               style={{
