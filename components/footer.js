@@ -1,154 +1,121 @@
-import { Row, Col } from "react-bootstrap";
+import Link from "next/link";
 import Image from "next/image";
-import {
-  FaInstagram,
-  FaFacebook,
-  FaLinkedin,
-  FaTwitter,
-  FaYoutube,
-  FaDiscord,
-  FaEnvelope,
-} from "react-icons/fa";
-import { AiTwotoneMail } from "react-icons/ai";
-const Footer = () => {
 
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+export default function Footer() {
+  const d = new Date();
+  let year = d.getFullYear();
   return (
-    <div>
-      <footer
-        className="text-center text-lg-start text-white"
-        style={{
-          backgroundColor: "#2f2b2b",
-          bottom: "0",
-          width: "100%",
-        }}
-      >
-        <div className="container p-4 pb-0">
-          <section className="">
-            < Row >
-              < Col >
-                <h6 className="text-uppercase mb-4 font-weight-bold">
-                  Contact Us
-                </h6>
-                <p>
-                  Indian Institute of Technology<br />
-                  (Banaras Hindu University)<br />
-                  Varanasi, India<br />
-                  PIN: 221005<br />
+    <footer>
+      <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl space-y-6">
+          <div className="flex justify-center gap-6">
+            <Link
+              className=""
+              href="https://twitter.com/ecelliitbhu"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg
+                className="h-8 w-8 text-blue-600 hover:text-blue-600/75 cursor-pointer dark:text-gray-300 dark:hover:text-gray-300/75 hover:scale-125 transition ease-in-out"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+              </svg>
+            </Link>
+            <Link
+              className="text-pink-600 hover:text-pink-600/75 hover:scale-125 transition ease-in-out"
+              href="https://www.instagram.com/ecelliitbhu/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <InstagramIcon fontSize="large"  className="text-pink-600 hover:text-pink-600/75 cursor-pointer dark:text-gray-300 dark:hover:text-gray-300/75 hover:scale-125 transition ease-in-out"/>
+            </Link>
 
-                  <a href="ecell@iitbhu.ac.in"><FaEnvelope></FaEnvelope> Mail us @ ecell@iitbhu.ac.in</a><br />
-                  +91 9587887413
-                </p>
-              </Col>
-              <hr className="w-100 clearfix d-md-none" />
-              <Col>
-                <Row>
-                  <h6 className="text-uppercase mb-4 font-weight-bold">
-                    Important Links
-                  </h6>
-                  <Col>
-                    <p>
-                      <a href="/" className="text-white ulstyle">Home</a>
-                    </p>
-                    <p>
-                      <a href="/" className="text-white ulstyle">Speaker</a>
-                    </p>
-                    <p>
-                      <a href="/" className="text-white ulstyle">Event</a>
-                    </p>
-                    <p>
-                      <a href="/" className="text-white ulstyle">Workshop</a>
-                    </p>
-                  </Col>
+            <Link
+              className="text-blue-600 hover:text-blue-600/75 hover:scale-125 transition ease-in-out"
+              href="https://www.linkedin.com/company/ecelliitbhu/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedInIcon className="text-blue-600 hover:text-blue-600/75 cursor-pointer dark:text-gray-300 dark:hover:text-gray-300/75 hover:scale-125 transition ease-in-out"  fontSize="large"/>
+            </Link>
 
-                  <hr className="w-100 clearfix d-md-none" />
-                  <Col>
-                    <p>
-                      <a href="/" className="text-white ulstyle">Sponsers</a>
-                    </p>
-                    <p>
-                      <a href="/" className="text-white ulstyle">Team</a>
-                    </p>
-                    <p>
-                      <a href="/" className="text-white ulstyle">Campus Directors</a>
-                    </p>
-                    <p>
-                      <a href="/" className="text-white ulstyle">Help</a>
-                    </p>
-                  </Col>
-                </Row>
-              </Col>
-              <hr className="w-100 clearfix d-md-none" />
-              <Col className="footer-items">
-                <iframe
-                  src="https://ecelliitbhu.substack.com/embed"
-                  width="450"
-                  height="200"
-                  className="newsletter"
-                  style={{
-                    // border: "1px solid #EEE",
-                    background: "#f8f9fa",
-                    margin: "auto",
-                  }}
-                  // frameborder="0"
-                  scrolling="no"
-                ></iframe>
-              </Col>
-            </Row>
-          </section>
+            <Link
+              className="text-gray-900 hover:text-gray-900/75 dark:text-gray-300 dark:hover:text-gray-300/75 hover:scale-125 transition ease-in-out"
+              href="https://www.youtube.com/c/ecelliitbhu"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <YouTubeIcon
+                className="text-red-600 hover:text-red-600/75 cursor-pointer dark:text-gray-300 dark:hover:text-gray-300/75 hover:scale-125 transition ease-in-out"
+                fontSize="large"
+              />
+            </Link>
+          </div>
 
-          <hr className="my-3" />
-          <section className="p-3 pt-0">
-            <div className="row d-flex align-items-center">
-              <div className="col-md-7 col-lg-8 text-center text-md-start">
-                <div className="p-3">
-                  © 2020 Copyright:
-                  <a className="text-white" href="https://mdbootstrap.com/">
-                    MDBootstrap.com
-                  </a>
-                </div>
-              </div>
-              <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <a className="btn btn-outline-light btn-floating m-1 text-white">
-                  <FaInstagram className="social-icons"></FaInstagram>
-                </a>
-                <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
-                  role="button"
+          <nav className="rounded-3xl border-4 border-gray-900 p-6 dark:border-gray-700">
+            <ul className="flex flex-wrap justify-center gap-6 text-sm font-bold">
+              <li>
+                <Link
+                  className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                  href="https://www.ecelliitbhu.com/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  {" "}
-                  <FaFacebook className="social-icons"></FaFacebook>
-                </a>
-                <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
-                  role="button"
+                  Website
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                  href="/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <FaLinkedin className="social-icons"></FaLinkedin>
-                </a>
-                <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
-                  role="button"
+                  Uses
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                  href="/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <FaTwitter className="social-icons"></FaTwitter>
-                </a>
-                <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
-                  role="button"
+                  Blog
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                  href="/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <FaYoutube className="social-icons"></FaYoutube>
-                </a>
-                <a
-                  className="btn btn-outline-light btn-floating m-1 text-white"
-                  role="button"
-                >
-                  <FaDiscord className="social-icons"></FaDiscord>
-                </a>
-              </div>
-            </div>
-          </section>
+                  Portfolio
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          <p className="mx-auto max-w-lg text-xs text-gray-500 dark:text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+            natus tempore illo laborum nam, modi quam sequi amet quo quasi
+            impedit iure eum similique pariatur alias exercitationem, porro
+            perspiciatis esse. Corporis odit consequatur sint sequi.
+            <span className="mt-4 block"> &copy; {year} E-Cell IIT BHU </span>
+          </p>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   );
-};
-
-export default Footer;
+}
