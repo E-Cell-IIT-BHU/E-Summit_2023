@@ -1,38 +1,72 @@
-.speaker_container{
+.speaker_container {
     height: fit-content;
     padding: 5px;
     text-align: center;
     color: white;
 }
 
-.heading{
+.heading {
     font-size: 5rem;
     color: #E9F0F4;
     font-family: Blinker;
     border-bottom: 3px solid #ddbd8d;
     width: fit-content;
     margin: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width : 600px) {
+        font-size: 3rem;
+    }
 }
 
-.box{
+.card {
     width: 90%;
     margin: auto;
     height: fit-content;
 }
-.speaker{
+
+.speaker {
     position: relative;
     text-align: center;
     color: white;
-    width: 80%;
-    height: 90%;
+    width: 70%;
+    height: 100%;
     overflow: hidden;
     border-radius: 15%;
+    margin: auto;
 }
 
-.img{
+.filter {
+    display: flex;
     width: 100%;
-    height: auto;
+    padding: 2px 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    .item {
+        color: #7c8084;
+        padding: 5px 10px;
+        border-radius: 5%;
+        transition: all .52s ease-in-out;
+        font-size: x-large;
+        letter-spacing: 0.1px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin:  0 5px;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+.img {
+    width: 100%;
+    height: 100%;
 }
 
 .image_overlay,
@@ -40,43 +74,48 @@
     position: absolute;
     width: 100%;
     left: 0;
-    
+
 }
 
-.speaker:after{
+.speaker:after {
     content: '';
     top: 0;
     height: 100%;
     transition: .5s;
 }
 
-.speaker:hover:after{
-    background: linear-gradient(to bottom , rgba(16, 16, 15, 0.01) 1%,  rgba(2, 2, 2, 0.4) 25%,  rgba(4, 4, 4, 0.7) 50%,  rgba(8, 8, 8, 0.8) 75%,  rgba(6, 6, 6, 0.9) 100%, );
+.speaker:hover:after {
+    background: linear-gradient(to bottom, rgba(16, 16, 15, 0.01) 1%, rgba(2, 2, 2, 0.4) 25%, rgba(4, 4, 4, 0.7) 50%, rgba(8, 8, 8, 0.8) 75%, rgba(6, 6, 6, 0.9) 100%, );
 }
 
-.image_overlay{
+.image_overlay {
     padding: 20px;
     margin-bottom: 20px;
     bottom: 0;
     z-index: 1;
-    transition: all .5s cubic-bezier(.13,.62,.81,.91) 0s;
+    transition: all .5s cubic-bezier(.13, .62, .81, .91) 0s;
     transform: translateY(140px);
 }
 
-.image_overlay h2{
+
+
+
+.image_overlay h2 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: xx-large;
 }
-.image_overlay a{
+
+.image_overlay a {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: large;
 }
-.image_overlay a:hover{
+
+.image_overlay a:hover {
     color: palevioletred;
 }
 
-.speaker:hover .image_overlay{
+.speaker:hover .image_overlay {
     transform: translateY(0);
 }
