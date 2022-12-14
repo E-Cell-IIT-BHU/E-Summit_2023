@@ -7,7 +7,7 @@ import {WordPress} from "../components/Data"
 import {All} from "../components/Data"
 
 import {motion} from "framer-motion"
-const speaker = () => {
+const portfolio = () => {
     const [value,setvalue]=React.useState(["#ff5b4a",null,null,null,null]);
     const [item,setitem]=React.useState([...All]);
     function Colorchange(index){
@@ -109,4 +109,4 @@ const speaker = () => {
 
 }
 
-export default speaker
+export default portfolio

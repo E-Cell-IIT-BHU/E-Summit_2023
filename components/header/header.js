@@ -1,13 +1,14 @@
-import React from 'react';
-import styles from './header.module.scss';
-import Image from 'next/image';
-import Tilt from 'react-parallax-tilt';
+import React from "react";
+import styles from "./header.module.scss";
+import Image from "next/image";
+import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
 
 function header() {
   return (
     <div
       style={{
-        backgroundColor: '#ffffff',
+        backgroundColor: "#ffffff",
       }}
     >
       <div className={styles.maincontainer}>
@@ -38,9 +39,13 @@ function header() {
                           they penetrate even the darkness that veils our eyes.
                         </p>
 
+                        <motion.div whileHover={{ scale: 1.004 }} >
+                    <Tilt>
                         <button className={styles.button1}>
                           <a> Explore Features </a>
                         </button>
+                        </Tilt>
+                        </motion.div>
                         {/* </div> */}
                       </main>
 
@@ -50,15 +55,34 @@ function header() {
                     </div>
                   </div>
                 </div>
-                <Image
-                  className={styles.image}
-                  src={
-                    'https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/portrait-woman.jpg'
-                  }
-                  width='700'
-                  height='700'
-                  alt='image'
-                />
+                {/* <div className={styles.column}>
+               
+                  <Image
+                    className={styles.image}
+                    src={
+                      "https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/portrait-woman.jpg"
+                    }
+                    width="700"
+                    height="700"
+                    alt="image"
+                  />
+                </div> */}
+                <div className={styles.column}>
+                <div className="portcontainer">
+                  <div className="portwomen">
+                    <motion.div whileHover={{ scale: 1.11 }} >
+                    <Tilt>
+                      <Image
+                        src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/portrait-woman.jpg"
+                        width={500}
+                        height={500}
+                        className="womanimg"
+                      />
+                    </Tilt>
+                    </motion.div>
+                  </div>
+                  </div>
+                </div>
               </div>
             </div>
           </header>
