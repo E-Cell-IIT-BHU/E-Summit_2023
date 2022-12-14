@@ -1,17 +1,16 @@
 import feature from ".././styles/feature.module.css";
-import { useState, useEffect } from "react";
-
+import { useState } from "react";
+import { motion } from "framer-motion";
+import AnimatedNumber from "animated-number-react";
 const Awesomefeature = () => {
   const [value, setvalue] = useState(
     "https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/planet-earth-space.jpg"
   );
   const [isHovering, setIsHovering] = useState(0);
   const [hidenum, sethidenum] = useState(true);
-  const [count, setCount] = useState("0");
-  let data = {
-    number: "7625",
-    duration: "1",
-  };
+
+  const [ct, setct] = useState(false);
+  const formatValue = (value) => value.toFixed(0);
 
   function Onhover(number) {
     setvalue(
@@ -27,30 +26,6 @@ const Awesomefeature = () => {
     sethidenum(true);
   }
 
-  const { number, duration } = data;
-  useEffect(() => {
-    let start = 0;
-
-    // first three numbers from props
-    const end = parseInt(number.substring(0, 3));
-    // if zero, return
-    if (start === end) return;
-
-    // find duration per increment
-    let totalMilSecDur = parseInt(2);
-    let incrementTime = (totalMilSecDur / end) * 1000;
-
-    // timer increments start counter
-    // then updates count
-    // ends if start reaches end
-    let timer = setInterval(() => {
-      start += 1;
-      setCount(String(start) + number.substring(3));
-      if (start === end) clearInterval(timer);
-    }, incrementTime);
-
-    // dependency array
-  }, [number, duration]);
   return (
     <>
       <div
@@ -58,8 +33,18 @@ const Awesomefeature = () => {
         style={{ backgroundImage: `url(${value})` }}
       >
         <div className={hidenum ? feature.num : feature.hidenum}>
-          {" "}
-          <h1 className="rahul">{count}</h1>
+          <motion.h1
+            className="rahul"
+            initial={() => {
+              setct(false);
+            }}
+            whileInView={() => {
+              setct(true);
+            }}
+            viewport={{ once: false }}
+          >
+            {ct && <AnimatedNumber value="3765" formatValue={formatValue} />}
+          </motion.h1>
           <p>AWESOME FEATURE</p>
         </div>
         <div

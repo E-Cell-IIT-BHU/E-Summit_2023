@@ -9,11 +9,14 @@ const Testimonial = () => {
     indicators: true,
     // scale: 1.2,
     duration: 1000,
-    loop:true,
+    loop: true,
     transitionDuration: 1000,
     infinite: true,
     prevArrow: (
-      <div style={{ width: "30px", marginLeft: "0px", cursor: "pointer" }} className={styles.prevArrow}>
+      <div
+        style={{ width: "30px", marginLeft: "0px", cursor: "pointer" }}
+        className={styles.prevArrow}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 612 612"
@@ -24,7 +27,10 @@ const Testimonial = () => {
       </div>
     ),
     nextArrow: (
-      <div style={{ width: "30px",marginLeft: "-30%", cursor: "pointer" }} className={styles.nextArrow}>
+      <div
+        style={{ width: "30px", marginLeft: "-30%", cursor: "pointer" }}
+        className={styles.nextArrow}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 612 612"
@@ -38,36 +44,38 @@ const Testimonial = () => {
   return (
     <>
       <section className={styles.container}>
-      <div className={styles.maincontainer}>
-    <div className={styles.submaincontainer}>
-        <div className={styles.row}>
-          <div className={styles.col} id={styles.id1}>
-            <p>CLIENTS OPINION</p>
-            <h1>
-              What Our <br /> Clients said
-            </h1>
-            {/* <h1>Clients said</h1> */}
-          </div>
+        <div className={styles.maincontainer}>
+          <div className={styles.submaincontainer}>
+            <div className={styles.row}>
+              <div className={styles.col} id={styles.id1}>
+                <p>CLIENTS OPINION</p>
+                <h1>
+                  What Our <br /> Clients said
+                </h1>
+                {/* <h1>Clients said</h1> */}
+              </div>
 
-          <div className={styles.col}>
-        <Zoom {...zoomInProperties}>
-          {data.map((item, i) => (
-         
-              <div key={i}>
-                <Image src={item.imgurl} width="70" height="70" alt="image" />
-                <h3>{item.name}</h3>
-                <p>{item.desc}</p>
-            
+              <div className={styles.col}>
+                <Zoom {...zoomInProperties}>
+                  {data.map((item, i) => (
+                    <div key={i}>
+                      <Image
+                        src={item.imgurl}
+                        width="70"
+                        height="70"
+                        alt="image"
+                      />
+                      <h3>{item.name}</h3>
+                      <p>{item.desc}</p>
+                    </div>
+                  ))}
+                </Zoom>
+              </div>
             </div>
-          ))}
-        </Zoom>
-        </div>
-        </div>
-        </div>
+          </div>
         </div>
       </section>
     </>
-  
   );
 };
 const data = [

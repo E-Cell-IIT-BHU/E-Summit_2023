@@ -1,0 +1,72 @@
+.container {
+  background-color: #222222;
+  color: white;
+}
+.maincontainer {
+  margin: auto;
+  height: 40rem;
+  background-color: #222222;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.containerheading {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.sub1 {
+  position: relative;
+  background-color: #2f3133;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 20rem;
+  width: 20rem;
+  margin: auto;
+  border-radius: 0.8rem;
+  color: #7a7a7a;
+}
+.sub1child {
+  position: absolute;
+  left: 3.5rem;
+
+  top: -5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.4rem;
+}
+.text {
+  position: absolute;
+  bottom: 1rem;
+  margin: 1rem 1.5rem;
+}
+@media screen and (max-width: 980px) {
+  .maincontainer {
+    display: block;
+    padding-top: 0rem;
+    height: 80rem;
+    /* border: 1px solid red; */
+  }
+  .sub1 {
+    margin: 8rem auto;
+  }
+}
+@media screen and (max-width: 340px) {
+  .sub1 {
+    width: 99%;
+  }
+  .sub1child {
+    justify-content: center;
+  }
+  .maincontainer {
+    height: 80rem;
+  }
+  .text {
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 287px) {
+  .sub1child {
+    left: 15%;
+  }
+}

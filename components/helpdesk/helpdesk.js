@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 // import gsap from 'gsap'
-import styles from "./helpdesk.module.scss";
-import Image from "next/image";
+import styles from './helpdesk.module.scss';
+import Image from 'next/image';
 
 function Helpdesk() {
   const [selected, setSelected] = useState(null);
@@ -10,7 +10,6 @@ function Helpdesk() {
     if (selected == i) {
       return setSelected(null);
     }
-
     setSelected(i);
   };
   return (
@@ -46,38 +45,27 @@ function Helpdesk() {
         height="770" alt="image" />
             </div>
         </div>
-        <div className={styles.col}>
-          <Image
-            className={styles.image}
-            src={
-              "https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/young-people.jpg"
-            }
-            width="455"
-            height="770"
-            alt="image"
-          />
-        </div>
     </section>
   );
 }
 const data = [
   {
-    question: "How can I register?",
+    question: 'How can I register?',
     answer:
       "We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud.",
   },
   {
-    question: "What are the main theme features ?",
+    question: 'What are the main theme features ?',
     answer:
       "We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud.",
   },
   {
-    question: "Is it free or will be charged in future ?",
+    question: 'Is it free or will be charged in future ?',
     answer:
       "We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud.",
   },
   {
-    question: "What are the main theme features ?",
+    question: 'What are the main theme features ?',
     answer:
       "We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud.",
   },
