@@ -70,6 +70,7 @@ const discover = () => {
           src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2022/05/sec-bg.jpg"
           width={800}
           height={800}
+          alt=""
         />
       </motion.div>
     </div>

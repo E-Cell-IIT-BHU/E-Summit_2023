@@ -39,12 +39,12 @@ function header() {
                           they penetrate even the darkness that veils our eyes.
                         </p>
 
-                        <motion.div whileHover={{ scale: 1.004 }} >
-                    <Tilt>
-                        <button className={styles.button1}>
-                          <a> Explore Features </a>
-                        </button>
-                        </Tilt>
+                        <motion.div whileHover={{ scale: 1.004 }}>
+                          <Tilt>
+                            <button className={styles.button1}>
+                              <a> Explore Features </a>
+                            </button>
+                          </Tilt>
                         </motion.div>
                         {/* </div> */}
                       </main>
@@ -68,19 +68,20 @@ function header() {
                   />
                 </div> */}
                 <div className={styles.column}>
-                <div className="portcontainer">
-                  <div className="portwomen">
-                    <motion.div whileHover={{ scale: 1.11 }} >
-                    <Tilt>
-                      <Image
-                        src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/portrait-woman.jpg"
-                        width={500}
-                        height={500}
-                        className="womanimg"
-                      />
-                    </Tilt>
-                    </motion.div>
-                  </div>
+                  <div className="portcontainer">
+                    <div className="portwomen">
+                      <motion.div whileHover={{ scale: 1.11 }}>
+                        <Tilt>
+                          <Image
+                            src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/portrait-woman.jpg"
+                            width={500}
+                            height={500}
+                            className="womanimg"
+                            alt=""
+                          />
+                        </Tilt>
+                      </motion.div>
+                    </div>
                   </div>
                 </div>
               </div>

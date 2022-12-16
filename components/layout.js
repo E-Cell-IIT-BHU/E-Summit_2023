@@ -100,6 +100,7 @@ const Layout = () => {
                     src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/young-woman.jpg"
                     width={700}
                     height={700}
+                    alt=""
                   />
                 </Tilt>
               </motion.div>

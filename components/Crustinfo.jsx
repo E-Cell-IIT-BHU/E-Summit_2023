@@ -39,6 +39,7 @@ const Crustinfo = () => {
                 width={200}
                 height={200}
                 className={Style.sub1child}
+                alt=""
               />
             </div>
             <div className={Style.text}>
@@ -74,6 +75,7 @@ const Crustinfo = () => {
                 src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/handsome-business-man.jpg"
                 width={200}
                 height={200}
+                alt=""
               />
             </div>
             <div className={Style.text}>
@@ -110,6 +112,7 @@ const Crustinfo = () => {
                 src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/coworkers-team.jpg"
                 width={200}
                 height={200}
+                alt=""
               />
             </div>
             <div className={Style.text}>
