@@ -45,6 +45,7 @@ const Portfolio = () => {
   return (
     <div>
       <Navbar />
+      <div className={Style.heading}>Events</div>
       <div className={Style.navbar}>
         <div
           className={Style.navchild}
@@ -127,10 +128,10 @@ const Portfolio = () => {
                 <div className={Style.sub2}></div>
                 <div className={Style.sub21}>
                   <div className={Style.sub22}>
-                    <i class='bi bi-search'></i>
+                    <i className='bi bi-search'></i>
                   </div>
                   <div className={Style.sub23}>
-                    <i class='bi bi-link-45deg'></i>
+                    <i className='bi bi-link-45deg'></i>
                   </div>
                 </div>
                 <div className={Style.sub3}>

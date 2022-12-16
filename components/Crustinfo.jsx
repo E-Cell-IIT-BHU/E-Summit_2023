@@ -45,7 +45,7 @@ const Crustinfo = () => {
               <h2 style={{ color: "white", fontSize: "2rem" }}>Best Gadgets</h2>
               Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet.
               <p style={{ textAlign: "center", fontSize: "2rem" }}>
-                <i class="bi bi-arrow-down"></i>
+                <i className="bi bi-arrow-down"></i>
               </p>
             </div>
           </motion.div>
@@ -82,7 +82,7 @@ const Crustinfo = () => {
               </h2>
               Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet.
               <p style={{ textAlign: "center", fontSize: "2rem" }}>
-                <i class="bi bi-arrow-down"></i>
+                <i className="bi bi-arrow-down"></i>
               </p>
             </div>
           </motion.div>
@@ -118,7 +118,7 @@ const Crustinfo = () => {
               </h2>
               Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet.
               <p style={{ textAlign: "center", fontSize: "2rem" }}>
-                <i class="bi bi-arrow-down"></i>
+                <i className="bi bi-arrow-down"></i>
               </p>
             </div>
           </motion.div>

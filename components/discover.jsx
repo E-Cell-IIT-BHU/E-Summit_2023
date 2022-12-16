@@ -32,19 +32,19 @@ const discover = () => {
           </h1>
         </div>
         <div className="titlefont">
-          <i class="bi bi-check-lg " style={{ color: "orange" }}></i>&nbsp;
+          <i className="bi bi-check-lg " style={{ color: "orange" }}></i>&nbsp;
           Re-usable components.
         </div>
         <div className="titlefont">
-          <i class="bi bi-check-lg" style={{ color: "orange" }}></i>&nbsp;
+          <i className="bi bi-check-lg" style={{ color: "orange" }}></i>&nbsp;
           Amazing photo gallery.
         </div>
         <div className="titlefont">
-          <i class="bi bi-check-lg" style={{ color: "orange" }}></i>&nbsp;
+          <i className="bi bi-check-lg" style={{ color: "orange" }}></i>&nbsp;
           Professional designs.
         </div>
         <div className="buttondis">
-          <i class="bi bi-megaphone"></i>&nbsp; Discover More
+          <i className="bi bi-megaphone"></i>&nbsp; Discover More
         </div>
       </motion.div>
       <motion.div
@@ -64,7 +64,7 @@ const discover = () => {
       >
         <div className="Circle01"></div>
         <div className="Circle02">
-          <i class="bi bi-play-fill" style={{ fontSize: "3rem" }}></i>
+          <i className="bi bi-play-fill" style={{ fontSize: "3rem" }}></i>
         </div>
         <Image
           src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2022/05/sec-bg.jpg"

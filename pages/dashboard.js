@@ -1,20 +1,20 @@
-import '../styles/globals.css';
-import Head from 'next/head';
+import { createTheme, NextUIProvider } from '@nextui-org/react';
 import React, { StrictMode } from 'react';
-import { createTheme, NextUIProvider, Text } from '@nextui-org/react';
-import { SSRProvider } from 'react-bootstrap';
-import { AuthContextProvider } from '../context/AuthContext';
-export default function MyApp({ Component, pageProps }) {
+import Dashboard from '../components/Dashboard/Dashboard';
+import Footer from '../components/footer';
+import Nav from '../components/Navbar';
+
+export default function DashboardPage() {
   return (
-    <SSRProvider>
-      <StrictMode styles={{ maxWidth: '1600px' }}>
-        <AuthContextProvider>
-          <NextUIProvider theme={theme}>
-            <Component {...pageProps} />
-          </NextUIProvider>
-        </AuthContextProvider>
-      </StrictMode>
-    </SSRProvider>
+    <StrictMode>
+      <NextUIProvider theme={theme}>
+        <div style={{ maxWidth: '1700px', margin: 'auto' }}>
+          <Nav />
+          <Dashboard />
+          <Footer />
+        </div>
+      </NextUIProvider>
+    </StrictMode>
   );
 }
 
