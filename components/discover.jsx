@@ -8,7 +8,6 @@ const discover = () => {
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{
-          // scale: 1,
           x: 0,
           opacity: 1,
           transition: {
@@ -29,7 +28,7 @@ const discover = () => {
         <div>
           <h1 className="buildingh1">
             Building hand crafted websites in no time
-          </h1>
+          </h1> 
         </div>
         <div className="titlefont">
           <i className="bi bi-check-lg " style={{ color: "orange" }}></i>&nbsp;
@@ -61,17 +60,12 @@ const discover = () => {
           },
         }}
         className="sub02"
+        style={{backgroundImage:"url(https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2022/05/sec-bg.jpg)"}}
       >
         <div className="Circle01"></div>
         <div className="Circle02">
           <i className="bi bi-play-fill" style={{ fontSize: "3rem" }}></i>
         </div>
-        <Image
-          src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2022/05/sec-bg.jpg"
-          width={800}
-          height={800}
-          alt=""
-        />
       </motion.div>
     </div>
   );
