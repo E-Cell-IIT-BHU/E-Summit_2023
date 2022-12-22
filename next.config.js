@@ -7,6 +7,7 @@ const nextConfig = {
       'crust.winsomethemes.com',
       'encrypted-tbn0.gstatic.com',
       'lh3.googleusercontent.com',
+      'd8it4huxumps7.cloudfront.net',
     ],
   },
 };

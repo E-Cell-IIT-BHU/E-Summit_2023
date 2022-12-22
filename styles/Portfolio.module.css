@@ -43,6 +43,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transform: scale(.9);
   transition: 0.5s ease;
 }
 .Maincontainer:hover .sub1 {

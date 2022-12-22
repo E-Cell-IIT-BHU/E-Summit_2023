@@ -1,12 +1,11 @@
 import Style from '../styles/Portfolio.module.css';
-import Design from '../components/Data';
+import Design from '../components/Speakerdetail';
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { useSession, signIn } from 'next-auth/react';
+import Link from 'next/link'
 
 const Speaker = () => {
-  const { data: session } = useSession();
   return (
     <div>
       <Navbar />
@@ -55,14 +54,9 @@ const Speaker = () => {
                 <div className={Style.sub3}>
                   <span className={Style.sub3info}>{data[1]}</span>
                   <div className={Style.title}>
-                    <div className={Style.sub33}>More</div>
-                    {!session ? (
-                      <>
-                        <div className={Style.sub33} onClick={() => signIn()}>
-                          Registration
-                        </div>
-                      </>
-                    ) : null}
+                    <div className={Style.sub33}>
+                     <Link href={data[2]}>Know More</Link> 
+                    </div>
                   </div>
                 </div>
               </motion.div>
