@@ -13,6 +13,7 @@ import Discover from "../components/discover";
 import { StrictMode } from "react";
 import { NextUIProvider, createTheme } from "@nextui-org/react";
 
+
 export default function Home() {
   return (
     <StrictMode styles={{ maxWidth: "1600px" }}>

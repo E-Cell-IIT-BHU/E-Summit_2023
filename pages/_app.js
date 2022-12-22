@@ -1,16 +1,23 @@
 import '../styles/globals.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
 import Head from 'next/head';
 import React, { StrictMode } from 'react';
 import { createTheme, NextUIProvider, Text } from '@nextui-org/react';
 import { SSRProvider } from 'react-bootstrap';
-import { AuthContextProvider } from '../context/AuthContext';
-export default function MyApp({ Component, pageProps }) {
+import { AuthContextProvider } from '../context/AuthContext'; 
+import { SessionProvider } from "next-auth/react"
+export default function MyApp({
+  Component,
+  pageProps: { session, ...pageProps },
+})  {
   return (
     <SSRProvider>
       <StrictMode styles={{ maxWidth: '1600px' }}>
         <AuthContextProvider>
           <NextUIProvider theme={theme}>
-            <Component {...pageProps} />
+          <SessionProvider session={session}>
+      <Component {...pageProps} />
+    </SessionProvider>
           </NextUIProvider>
         </AuthContextProvider>
       </StrictMode>

@@ -11,7 +11,7 @@ function header() {
         backgroundColor: "#ffffff",
       }}
     >
-      <div className={styles.maincontainer}>
+      <div className={styles.maincontainer}> 
         <div className={styles.submaincontainer}>
           <header className={styles.header}>
             <div className={styles.container}>
@@ -19,12 +19,8 @@ function header() {
                 <div className={styles.column}>
                   <div className={styles.content}>
                     <div className={styles.heading}>
-                      {/* <div className={styles.row}>
-            <div className={styles.column}> */}
-                      {`E-Summit '23 for`}
+                     <span className={styles.Eheading}> {`E-Summit '23 for`}</span>
                       <br />
-                      {/* <span> digital &nbsp; </span> */}
-                      {/* <br/> */}
                       <span>
                         <b className={styles.diffText}>inspiration</b>
                         <b className={styles.diffText}>unique</b>
@@ -55,18 +51,6 @@ function header() {
                     </div>
                   </div>
                 </div>
-                {/* <div className={styles.column}>
-               
-                  <Image
-                    className={styles.image}
-                    src={
-                      "https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/portrait-woman.jpg"
-                    }
-                    width="700"
-                    height="700"
-                    alt="image"
-                  />
-                </div> */}
                 <div className={styles.column}>
                   <div className="portcontainer">
                     <div className="portwomen">
