@@ -11,10 +11,11 @@ const Awesomefeature = () => {
 
   const [ct, setct] = useState(false);
   const formatValue = (value) => value.toFixed(0);
+  const bgimg=["https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/hot-spot-1.jpg","https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/hot-spot-2.jpg","https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/hot-spot-3.jpg","https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/hot-spot-4.jpg","https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/hot-spot-5.jpg",]
 
   function Onhover(number) {
     setvalue(
-      `https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/hot-spot-${number}.jpg`
+      bgimg[number-1]
     );
     sethidenum(false);
   }
