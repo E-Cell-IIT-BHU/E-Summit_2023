@@ -13,7 +13,7 @@ import { UserAuth } from "../context/AuthContext";
 
 import { useRouter } from "next/router";
 
-const navItems = [{ name: "Home", page: "/" }, { name: "Events", page: "/events" }, { name: "Speakers", page: "/speaker" }, { name: "Team", page: "/team" }]
+const navItems = [{ name: "Home", page: "/" }, { name: "Events", page: "/events" }, { name: "Speakers", page: "/speaker" }, { name: "Team", page: "/Team" }]
 
 export default function Nav() {
   const router = useRouter();
