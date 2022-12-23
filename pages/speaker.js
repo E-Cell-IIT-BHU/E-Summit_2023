@@ -9,7 +9,7 @@ const Speaker = () => {
   return (
     <div>
       <Navbar />
-      <div className={Style.heading}>Events</div>
+      <div className={Style.heading}>Speakers</div>
       <div className={Style.container}>
         {Design.map((data, index) => {
           return (
@@ -44,18 +44,15 @@ const Speaker = () => {
                 ></div>
                 <div className={Style.sub2}></div>
                 <div className={Style.sub21}>
-                  <div className={Style.sub22}>
-                    <i className='bi bi-search'></i>
-                  </div>
-                  <div className={Style.sub23}>
-                    <i className='bi bi-link-45deg'></i>
-                  </div>
+                
                 </div>
                 <div className={Style.sub3}>
                   <span className={Style.sub3info}>{data[1]}</span>
+                  <br/>
+                  <span className={Style.sub3info}>{data[2]}</span>
                   <div className={Style.title}>
                     <div className={Style.sub33}>
-                     <Link href={data[2]}>Know More</Link> 
+                     <Link href={data[3]}>Know More</Link> 
                     </div>
                   </div>
                 </div>

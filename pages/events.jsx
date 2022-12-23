@@ -45,12 +45,7 @@ const Events = () => {
                 ></div>
                 <div className={Style.sub2}></div>
                 <div className={Style.sub21}>
-                  <div className={Style.sub22}>
-                    <i className="bi bi-search"></i>
-                  </div>
-                  <div className={Style.sub23}>
-                    <i className="bi bi-link-45deg"></i>
-                  </div>
+                  
                 </div>
                 <div className={Style.sub3}>
                   <span className={Style.sub3info}>{data[1]}</span>
