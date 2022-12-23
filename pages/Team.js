@@ -5,17 +5,99 @@ import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
 import Image from 'next/image';
 import prof from '../assets/team/rajnesh_tyagi.png';
-import Amit from '../assets/team/2022-2023/Amit.jpg';
-import Tanaya from '../assets/team/2022-2023/Tanaya.jpg';
-import Tanya from '../assets/team/2022-2023/Tanya.jpeg';
-import Parth from '../assets/team/2022-2023/Parth.jpg';
-import Ashwat from '../assets/team/2022-2023/Ashwat.jpg';
-import Divyansh from '../assets/team/2022-2023/Divyansh.jpg';
-import Shreya from '../assets/team/2022-2023/Shreya.JPG';
-import Vanshika from '../assets/team/2022-2023/Vanshika.jpg';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { Accordion, AccordionSummary } from '@mui/material';
+import Amit from '../public/team/2022-2023/Amit.jpg';
+import Tanaya from '../public/team/2022-2023/Tanaya.jpg';
 import Navbar from '../components/Navbar';
+
+
+const Data = [
+  {
+      "name": "Aditya Sharma",
+      "post": "Publicity,PR",
+      "img": '/team/2022-2023/aditya_sharma.jpeg'
+  },
+  {
+      "name": "Akshay Malhotra",
+      "post": "PR",
+      "img": "/team/2022-2023/akshay_malhotra.jpeg"
+  },
+  {
+      "name": "Ashwat",
+      "post": "Tech Team",
+      "img": "/team/2022-2023/Ashwat.jpg"
+  },
+  {
+      "name": "Ayush Anil",
+      "post": "Twitter",
+      "img": "/team/2022-2023/ayush_anil.jpeg"
+  },
+  {
+      "name": "Divyansh Thakre",
+      "post": "Publicity,PR",
+      "img": "/team/2022-2023/Divyansh.jpg"
+  },
+  {
+      "name": "Gunjan Pandey",
+      "post": "PR",
+      "img": "/team/2022-2023/gunjan.jpg"
+  },
+  {
+      "name": "Khushi Kapoor",
+      "post": "Content",
+      "img": "/team/2022-2023/khushi_kapoor.jpeg"
+  },
+  {
+      "name": "Maitrayi Komple",
+      "post": "Publicity,PR",
+      "img": "/team/2022-2023/maitrayi_komple.jpeg"
+  },
+  {
+      "name": "Mansi Shrivastava",
+      "post": "Publicity,PR",
+      "img": "/team/2022-2023/mansi_shrivastava.jpeg"
+  },
+  {
+      "name": "Megh Dokania",
+      "post": "Publicity,PR",
+      "img": "/team/2022-2023/megh_dokania.jpeg"
+  },
+  {
+      "name": "Parth Gupta",
+      "post": "Publicity,PR",
+      "img": "/team/2022-2023/Parth.jpg"
+  },
+  {
+      "name": "Prakhar Agrawal",
+      "post": "Publicity,PR",
+      "img": "/team/2022-2023/prakhar_agrawal.jpeg"
+  },
+  {
+      "name": "Shreya Jain",
+      "post": "Publicity,PR",
+      "img": "/team/2022-2023/Shreya.JPG"
+  },
+  {
+      "name": "Tanya Gupta",
+      "post": "Publicity,PR",
+      "img": "/team/2022-2023/Tanya.jpeg"
+  },
+  {
+      "name": "Tushar Singhal",
+      "post": "Publicity,PR",
+      "img": "/team/2022-2023/tushar_singhal.jpeg"
+  },
+  {
+      "name": "Vanshika Gupta",
+      "post": "Publicity,PR",
+      "img": "/team/2022-2023/Vanshika.jpg"
+  },
+  {
+      "name": "Vecha Sumanth",
+      "post": "Publicity,PR",
+      "img": "/team/2022-2023/vecha_sumanth.jpeg"
+  }
+  
+]
 
 const Team = () => {
   return (
@@ -124,6 +206,8 @@ const Team = () => {
               </div>
               <div className='our-team'>
                 <Image
+                  height={1000}
+                  width={1000}
                   src={Tanaya}
                   className='img-responsive'
                   alt='team member'
@@ -158,210 +242,46 @@ const Team = () => {
               </div>
             </div>
             <div className='team-container-1'>
-              <div className='our-team'>
-                <Image
-                  src={Tanya}
-                  className='img-responsive'
-                  alt='team member'
-                />
-                <div className='team-content'>
-                  <h3 className='name'>TANYA GUPTA</h3>
-                  <span className='post'>BRANDING HEAD</span>
-                  <div className='team-social'>
-                    <a
-                      href={`mailto:tanya.gupta.che20@itbhu.ac.in`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <GrMail className='social-icons'></GrMail>
-                    </a>
-                    <a
-                      href='https://www.linkedin.com/in/tanya-gupta-215942214'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <FaLinkedin className='social-icons'></FaLinkedin>
-                    </a>
-                    <a
-                      href={`https://twitter.com/TanyaGu27136914?t=pBdV1Hb-cSR19h2Zcqr9Yg&s=08`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <FaTwitter className='social-icons'></FaTwitter>
-                    </a>
+              {Data.map((data, index) => (
+
+                <div className='our-team' key={index}>
+                  <Image
+                    src={data.img}
+                    height={1000}
+                    width={1000}
+                    className='img-responsive'
+                    alt='team member'
+                  />
+                  <div className='team-content'>
+                    <h3 className='name'>{data.name}</h3>
+                    <span className='post'>{data.post}</span>
+                    <div className='team-social'>
+                      <a
+                        href={data.mail}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <GrMail className='social-icons'></GrMail>
+                      </a>
+                      <a
+                        href={data.linkedin}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <FaLinkedin className='social-icons'></FaLinkedin>
+                      </a>
+                      <a
+                        href={data.twitter}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <FaTwitter className='social-icons'></FaTwitter>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className='our-team'>
-                <Image
-                  src={Parth}
-                  className='img-responsive'
-                  alt='team member'
-                />
-                <div className='team-content'>
-                  <h3 className='name'>PARTH GUPTA</h3>
-                  <span className='post'>SAP HEAD</span>
-                  <div className='team-social'>
-                    <a
-                      href={`mailto:parthsanjeev.gupta.che20@itbhu.ac.in`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <GrMail className='social-icons'></GrMail>
-                    </a>
-                    <a
-                      href='https://www.linkedin.com/in/parthgupta03/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <FaLinkedin className='social-icons'></FaLinkedin>
-                    </a>
-                    <a
-                      href='https://twitter.com/ParthG03'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <FaTwitter className='social-icons'></FaTwitter>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className='our-team  '>
-                <Image
-                  src={Ashwat}
-                  className='img-responsive'
-                  alt='team member'
-                />
-                <div className='team-content'>
-                  <h3 className='name'>ASHWAT KUMAR SINGH</h3>
-                  <span className='post'>TECH HEAD</span>
-                  <div className='team-social'>
-                    <a
-                      href={`mailto:ashwat.kumarsingh.met20@itbhu.ac.in`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <GrMail className='social-icons'></GrMail>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/in/ashwat-singh/`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <FaLinkedin className='social-icons'></FaLinkedin>
-                    </a>
-                    <a
-                      href='https://twitter.com/ashwat_singh'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <FaTwitter className='social-icons'></FaTwitter>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className='our-team '>
-                <Image
-                  src={Shreya}
-                  className='img-responsive'
-                  alt='team member'
-                />
-                <div className='team-content'>
-                  <h3 className='name'>SHREYA JAIN</h3>
-                  <span className='post'>EVENTS HEAD</span>
-                  <div className='team-social'>
-                    <a
-                      href={`mailto:shreya.jain.cd.eee20@iitbhu.ac.in`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <GrMail className='social-icons'></GrMail>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/in/shreya-jain-/`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <FaLinkedin className='social-icons'></FaLinkedin>
-                    </a>
-                    <a
-                      href={`https://twitter.com/shreyaj90`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <FaTwitter className='social-icons'></FaTwitter>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className='our-team'>
-                <Image
-                  src={Vanshika}
-                  className='img-responsive'
-                  alt='team member'
-                />
-                <div className='team-content'>
-                  <h3 className='name'>VANSHIKA GUPTA</h3>
-                  <span className='post'>STRATEGIC RELATIONS HEAD</span>
-                  <div className='team-social'>
-                    <a
-                      href={`mailto:vanshika.gupta.met20@iitbhu.ac.in`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <GrMail className='social-icons'></GrMail>
-                    </a>
-                    <a
-                      href='https://www.linkedin.com/in/vanshika-gupta-299001201'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <FaLinkedin className='social-icons'></FaLinkedin>
-                    </a>
-                    <a
-                      href='https://twitter.com/vanshika130502'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <FaTwitter className='social-icons'></FaTwitter>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className='our-team  '>
-                <Image
-                  src={Divyansh}
-                  className='img-responsive'
-                  alt='team member'
-                />
-                <div className='team-content'>
-                  <h3 className='name'>DIVYANSH THAKRE</h3>
-                  <span className='post'>{`INNOVATION & INCUBATION HEAD`}</span>
-                  <div className='team-social'>
-                    <a
-                      href={`mailto:divyansh.thakre.civ20@itbhu.ac.in`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <GrMail className='social-icons'></GrMail>
-                    </a>
-                    <a
-                      href='https://www.linkedin.com/in/divyanshthakre/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <FaLinkedin className='social-icons'></FaLinkedin>
-                    </a>
-                    <a
-                      href='https://twitter.com/Divyansh_03'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <FaTwitter className='social-icons'></FaTwitter>
-                    </a>
-                  </div>
-                </div>
-              </div>
+
+              ))}
             </div>
           </div>
         </div>
