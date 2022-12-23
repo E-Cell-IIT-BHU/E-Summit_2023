@@ -77,10 +77,10 @@ a {
   height: 360px;
   margin: 20px;
 }
-
+/* 
 .our-team img {
   width: 800%;
-}
+} */
 .our-team .team-content .name {
   font-size: 18px;
   font-weight: 800;
@@ -99,9 +99,10 @@ a {
   justify-content: center;
 }
 .team-social {
+  width: 50%;
+  justify-content: space-around;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin: 10px;
 }
 @media screen and (max-width: 1200px) {
