@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Style from "../styles/crustinfocss.module.css";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Crustinfo = () => {
   return (
@@ -9,9 +10,9 @@ const Crustinfo = () => {
       <div className={Style.container}>
         <div className={Style.containerheading}>
           <p style={{ color: "#7a7a7a", fontSize: "1.5rem" }}>
-            IT TAKES MORE THAN MAGIC
+          Whats In Store?
           </p>
-          <h1>Things are just easy when building with crust.</h1>
+          <h1 style={{width:"80%",margin:"auto"}}>Network with fellow entrepreneurs, display your ingenious startup to the world, participate in enthralling competitions, and Raise funds for your venture, all in one place!</h1>
         </div>
         <div className={Style.maincontainer}>
           <motion.div
@@ -43,8 +44,8 @@ const Crustinfo = () => {
               />
             </div>
             <div className={Style.text}>
-              <h2 style={{ color: "white", fontSize: "2rem" }}>Best Gadgets</h2>
-              Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet.
+              <h2 style={{ color: "white", fontSize: "2rem" }}>Events</h2>
+             <Link href="https://unstop.com/festival/e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-75705"> Participate in fun events and showcase your competitive skills to shine out amongst the crowd!</Link>
               <p style={{ textAlign: "center", fontSize: "2rem" }}>
                 <i className="bi bi-arrow-down"></i>
               </p>
@@ -80,9 +81,9 @@ const Crustinfo = () => {
             </div>
             <div className={Style.text}>
               <h2 style={{ color: "white", fontSize: "2rem" }}>
-                Share Success
+              Panel Discussions
               </h2>
-              Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet.
+             <Link href="https://forms.gle/SaSZx3en58wdUejb8"> Join the most insightful talks with all the renowned speakers, all in one panel, and get inspired by the most illuminating minds!</Link>
               <p style={{ textAlign: "center", fontSize: "2rem" }}>
                 <i className="bi bi-arrow-down"></i>
               </p>
@@ -117,9 +118,9 @@ const Crustinfo = () => {
             </div>
             <div className={Style.text}>
               <h2 style={{ color: "white", fontSize: "1.9rem" }}>
-                Medical Insurance
+              Startup Showcase
               </h2>
-              Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet.
+             <Link href="https://unstop.com/workshop/startup-showcase-e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-573187"> Showcase your Venture in front of VCs, Mentors, Angel Investors, and target audience and network with fellow startups.</Link>
               <p style={{ textAlign: "center", fontSize: "2rem" }}>
                 <i className="bi bi-arrow-down"></i>
               </p>

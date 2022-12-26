@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const discover = () => {
   return (
@@ -22,25 +21,25 @@ const discover = () => {
       >
         <div className="titlefont">
           <p className="titlefont" style={{ color: "#7A7A7A" }}>
-            RELIABILITY & WORK SKILLS
+          A DREAM FOR STARTUPS
           </p>
         </div>
         <div>
           <h1 className="buildingh1">
-            Building hand crafted websites in no time
+          Presenting the official aftermovie of E-Summit'23 
           </h1> 
         </div>
         <div className="titlefont">
           <i className="bi bi-check-lg " style={{ color: "orange" }}></i>&nbsp;
-          Re-usable components.
+          A Justapoxication of startups.
         </div>
         <div className="titlefont">
           <i className="bi bi-check-lg" style={{ color: "orange" }}></i>&nbsp;
-          Amazing photo gallery.
+          Dreams.
         </div>
         <div className="titlefont">
           <i className="bi bi-check-lg" style={{ color: "orange" }}></i>&nbsp;
-          Professional designs.
+          Knowledge.
         </div>
         <div className="buttondis">
           <i className="bi bi-megaphone"></i>&nbsp; Discover More

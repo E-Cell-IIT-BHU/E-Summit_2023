@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import gsap from 'gsap'
 import styles from './helpdesk.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Helpdesk() {
   const [selected, setSelected] = useState(null);
@@ -33,7 +34,7 @@ function Helpdesk() {
                     height='5'
                     viewBox='0 0 42 25'
                   >
-                    {' '}
+                    
                     <path
                       d='M3 3L21 21L39 3'
                       stroke='white'
@@ -45,7 +46,10 @@ function Helpdesk() {
                 <div
                   className={selected == i ? styles.answer_show : styles.answer}
                 >
-                  <p>{item.answer}</p>
+                  {i==0? <p style={{marginTop:"-1.5rem",marginBottom:"1.5rem"}}> <Link href="https://unstop.com/festival/e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-75705">{item.answer.ans1}</Link>
+                  <br/>
+                  <Link href="https://forms.gle/SaSZx3en58wdUejb8">{item.answer.ans2}</Link>
+                  </p>:<p style={{marginTop:"-1.5rem",marginBottom:"1.5rem"}}>{item.answer}</p>}
                 </div>
               </div>
             ))}
@@ -69,24 +73,22 @@ function Helpdesk() {
 const data = [
   {
     question: 'How can I register?',
-    answer:
-      "We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud.",
+    answer:{
+      ans1:`You can register for the events at our unstop page here.`,
+      ans2:`To attend the E-Summit, you can avail the pass here.`
+    }  
   },
   {
-    question: 'What are the main theme features ?',
+    question: 'When is the event?',
     answer:
-      "We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud.",
+      "The pre-events and rounds of the first few rounds have already begun. All the final rounds, panel discussions, networking sessions, and startup showcase will be from 6 to 8th Jan on the campus of IIT (BHU), Varanas",
   },
   {
-    question: 'Is it free or will be charged in future ?',
+    question: 'What Next after the Registration?',
     answer:
       "We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud.",
   },
-  {
-    question: 'What are the main theme features ?',
-    answer:
-      "We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud.",
-  },
+  
 ];
 
 export default Helpdesk;
