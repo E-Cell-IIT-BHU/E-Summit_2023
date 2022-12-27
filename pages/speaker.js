@@ -1,11 +1,11 @@
-import Style from "../styles/Portfolio.module.css";
-import Design from "../components/Data";
-import { motion } from "framer-motion";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { useSession , signIn} from "next-auth/react"
+import Style from '../styles/Portfolio.module.css';
+import Design from '../components/Data';
+import { motion } from 'framer-motion';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { useSession, signIn } from 'next-auth/react';
 
-const speaker = () => {
+const Speaker = () => {
   const { data: session } = useSession();
   return (
     <div>
@@ -20,8 +20,8 @@ const speaker = () => {
                   scale: 0,
                   transition: {
                     delay: 0.1,
-                    type: "spring",
-                    ease: "easeInOut",
+                    type: 'spring',
+                    ease: 'easeInOut',
                     damping: 20,
                     stiffness: 170,
                   },
@@ -30,8 +30,8 @@ const speaker = () => {
                   scale: 1,
                   transition: {
                     delay: 0.1,
-                    type: "spring",
-                    ease: "easeInOut",
+                    type: 'spring',
+                    ease: 'easeInOut',
                     damping: 20,
                     stiffness: 170,
                   },
@@ -46,25 +46,23 @@ const speaker = () => {
                 <div className={Style.sub2}></div>
                 <div className={Style.sub21}>
                   <div className={Style.sub22}>
-                    <i className="bi bi-search"></i>
+                    <i className='bi bi-search'></i>
                   </div>
                   <div className={Style.sub23}>
-                    <i className="bi bi-link-45deg"></i>
+                    <i className='bi bi-link-45deg'></i>
                   </div>
                 </div>
                 <div className={Style.sub3}>
                   <span className={Style.sub3info}>{data[1]}</span>
                   <div className={Style.title}>
-                          <div className={Style.sub33}>
-                            More
-                          </div>   
-                         { !session? <>
-                               <div className={Style.sub33} onClick={() => signIn()}>
-                               Registration
-                             </div>  
-                             </>:null
-                             
-                           }
+                    <div className={Style.sub33}>More</div>
+                    {!session ? (
+                      <>
+                        <div className={Style.sub33} onClick={() => signIn()}>
+                          Registration
+                        </div>
+                      </>
+                    ) : null}
                   </div>
                 </div>
               </motion.div>
@@ -77,4 +75,4 @@ const speaker = () => {
   );
 };
 
-export default speaker;
+export default Speaker;
