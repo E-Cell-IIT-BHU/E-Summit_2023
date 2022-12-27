@@ -2,7 +2,6 @@ import { useContext, createContext, useEffect, useState } from "react";
 
 import {
   GoogleAuthProvider,
-  signInWithPopup,
   signInWithRedirect,
   signOut,
   onAuthStateChanged,
@@ -10,7 +9,8 @@ import {
 
 import { auth, db } from "../utility/firebase";
 import { useRouter } from "next/router";
-import { doc, getDoc, setDoc, collection, set } from "firebase/firestore";
+import { doc, getDoc, setDoc } from "firebase/firestore";
+import axios from "axios";
 
 const AuthContext = createContext();
 export const AuthContextProvider = ({ children }) => {
@@ -46,14 +46,14 @@ export const AuthContextProvider = ({ children }) => {
       } else {
         const newUser = {
           id: googleUser.uid,
-          referral_code:
+          participant_id:
             googleUser.uid.slice(0, 4).toLowerCase() +
             Date.now().toString().substring(9),
           name: googleUser.displayName,
           email: googleUser.email,
           avatar: googleUser.photoURL,
           time: Date.now(),
-          registrations: [],
+          isRegistered: false
         };
         await setDoc(doc(db, "participants", newUser.id), newUser);
         setUser(newUser);
@@ -70,6 +70,17 @@ export const AuthContextProvider = ({ children }) => {
       unsubscribe();
     };
   }, []);
+  // const
+  if (user?.name && !user.isRegistered) {
+    axios({
+      method: 'post',
+      url: "api/completeRegisteration",
+      data: user
+    }).then(function (res) {
+      // console.log(res)
+      if (res.data.flag == 1) { setUser({ ...user, isRegistered: true }) };
+    }).catch(function (err) { })
+  }
   return (
     <AuthContext.Provider
       value={{ handleGoogleSignIn, user, logout, isLoggedIn }}

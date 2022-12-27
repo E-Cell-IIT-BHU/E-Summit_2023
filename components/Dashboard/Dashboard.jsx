@@ -3,19 +3,7 @@ import style from "./Dashboard.module.scss";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { UserAuth } from "../../context/AuthContext";
-import {
-  TableCell,
-  TableContainer,
-  TableHead,
-  Table,
-  Paper,
-  TableRow,
-  TableBody,
-} from "@mui/material";
 
-function createData(rank, name, email) {
-  return { rank, name, email };
-}
 const Loader = () => {
   return (
     <lottie-player
@@ -31,17 +19,7 @@ const Loader = () => {
 const Dashboard = () => {
   const router = useRouter();
   const { handleGoogleSignIn, logout, user, isLoggedIn } = UserAuth();
-  const registrations = user.registrations?.map((person, id) =>
-    createData(id, person.name, person.email)
-  );
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     !user?.name &&
-  //       setTimeout(() => {
-  //         !user?.name && router.replace("/");
-  //       }, 1000);
-  //   }, 3000);
-  // }, []);
+  // console.log(user)
   return (
     <>
       {!user?.name ? (
@@ -74,39 +52,19 @@ const Dashboard = () => {
               </div>
 
               <div className={style.row4}>
-                <h1 className={style.data}>REFERAL CODE:</h1>
+                <h1 className={style.data}>PARTICIPANT ID:</h1>
                 <h1 className={style.data} style={{ color: "#c084fc" }}>
-                  {user.referral_code}
+                  {user.participant_id}
                 </h1>
               </div>
             </div>
           </div>
-          <div className={`${style.row}  ${style.row2} `}>
-            <div className={`${style.col}  ${style.col2} `}>
-              <h1 className={style.heading}>Leaderboard</h1>
-              <div>
-                <h1
-                  className={style.heading}
-                  style={{ color: "#c084fc" }}
-                >{`Coming soon!`}</h1>
-              </div>
+          {user.isRegistered ? <div>
+            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+              <h1 className={style.data} style={{ color: "#38E54D" }}>You are registered!</h1>
+              <h1 className={style.data} style={{ color: "#38E54D" }}>Please check your mail for the ticket</h1>
             </div>
-            <div className={`${style.col}  ${style.col2} `}>
-              <h1 className={style.heading}>
-                Registrations:{" "}
-                <span style={{ color: "#c084fc" }}>{registrations.length}</span>
-              </h1>
-              <div>
-                {registrations.length ? (
-                  <RegistrationsTable rows={registrations} />
-                ) : (
-                  <h1 className={style.heading} style={{ color: "red" }}>
-                    No registrations!
-                  </h1>
-                )}
-              </div>
-            </div>
-          </div>
+          </div> : <iframe src={`https://www.townscript.com/v2/widget/esummit-2023-iit-bhu-343224/booking?td-ticket-name-1=5&td-ticket-name-2=6&name=${user.name}&emailid=${user.email}&cq1=${user.participant_id}`} frameBorder="0" height="600px" width="100%"></iframe>}
         </div>
       )}
       <script
@@ -116,37 +74,5 @@ const Dashboard = () => {
     </>
   );
 };
-
-function RegistrationsTable({ rows }) {
-  return (
-    <Paper sx={{ width: "95%", overflow: "hidden" }}>
-      <TableContainer sx={{ maxHeight: 440 }}>
-        <Table stickyHeader size="small">
-          <TableHead>
-            <TableRow>
-              <TableCell>Sr.No.</TableCell>
-              <TableCell align="center">Name</TableCell>
-              <TableCell align="center">email</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
-              <TableRow
-                key={row.name}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-              >
-                <TableCell component="th" scope="row">
-                  {row.rank}
-                </TableCell>
-                <TableCell align="center">{row.name}</TableCell>
-                <TableCell align="center">{row.email}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-    </Paper>
-  );
-}
 
 export default Dashboard;

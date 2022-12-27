@@ -1,5 +1,5 @@
 import Style from '../styles/Portfolio.module.css';
-import Design from '../components/Data';
+import Design from '../components/Speakerdetail';
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
