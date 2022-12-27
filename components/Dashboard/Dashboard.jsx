@@ -18,8 +18,9 @@ const Loader = () => {
 };
 const Dashboard = () => {
   const router = useRouter();
-  const { handleGoogleSignIn, logout, user, isLoggedIn } = UserAuth();
+  const { handleGoogleSignIn, logout, user, isLoggedIn, checkRegisteration } = UserAuth();
   // console.log(user)
+  checkRegisteration();
   return (
     <>
       {!user?.name ? (

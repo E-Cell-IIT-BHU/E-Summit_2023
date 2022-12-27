@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './header.module.scss';
 import Image from 'next/image';
+import HeroImage from '../../public/header/HeroImage.jpg';
 import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 
@@ -24,23 +25,21 @@ function header() {
                       </span>
                       <br />
                       <span>
-                        <b className={styles.diffText}>inspiration</b>
-                        <b className={styles.diffText}>unique</b>
-                        <b className={styles.diffText}>market</b>
-                        <b className={styles.diffText}>identity</b>
+                        <b className={styles.diffText}>Hustlers</b>
+                        <b className={styles.diffText}>Learners</b>
+                        <b className={styles.diffText}>Achievers</b>
                       </span>
 
                       <main>
                         <p className={styles.para}>
                           {/* <hr/> */}
-                          {`E-Summit'23 will present rays of hope so dazzling that
-                          they penetrate even the darkness that veils our eyes.`}
+                          {`Are you one of those people working day and night on that one startup idea? Are you the one who wants to explore the world of entrepreneurship? Want to learn from others and network with them? You've arrived at the proper location. You are wanted by us!`}
                         </p>
 
                         <motion.div whileHover={{ scale: 1.004 }}>
                           <Tilt>
                             <button className={styles.button1}>
-                              <a> Explore Features </a>
+                              <a> Register Now </a>
                             </button>
                           </Tilt>
                         </motion.div>
@@ -48,7 +47,7 @@ function header() {
                       </main>
 
                       <div className={styles.footer}>
-                        Join Our Work Team Now
+                        {`January 6-8th, IIT (BHU), Varanasi`}
                       </div>
                     </div>
                   </div>
@@ -59,7 +58,7 @@ function header() {
                       <motion.div whileHover={{ scale: 1.11 }}>
                         <Tilt>
                           <Image
-                            src='https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/portrait-woman.jpg'
+                            src={HeroImage}
                             width={500}
                             height={500}
                             className='womanimg'

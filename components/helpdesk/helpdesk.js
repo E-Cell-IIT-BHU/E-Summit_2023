@@ -16,11 +16,9 @@ function Helpdesk() {
     <section className={styles.container}>
       <div className={styles.row}>
         <div className={styles.col}>
-          <p className={styles.sub_heading}>CREATE UNLIMITED LAYOUTS</p>
-          <h1>From our help desk</h1>
+          <h1>FAQs</h1>
           <p className={styles.sub_para}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe,
-            perspiciatis porro deleniti nisi, mollitia, magnam
+            Get those trivial queries of yours answered.
           </p>
           <div className={styles.faq}>
             {data.map((item, i) => (
@@ -70,7 +68,7 @@ const data = [
   {
     question: 'How can I register?',
     answer:
-      "We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud.",
+      'You can register for the events at our unstop page here.[https://unstop.com/festival/e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-75705]\n To attend the E-Summit, you can avail the pass in dashboard.',
   },
   {
     question: 'What are the main theme features ?',
@@ -78,14 +76,13 @@ const data = [
       "We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud.",
   },
   {
-    question: 'Is it free or will be charged in future ?',
+    question: 'When is the event?',
     answer:
-      "We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud.",
+      'The pre-events and rounds of the first few rounds have already begun. All the final rounds, panel discussions, networking sessions, and startup showcase will be from 6 to 8th Jan on the campus of IIT (BHU), Varanasi',
   },
   {
-    question: 'What are the main theme features ?',
-    answer:
-      "We have world class engineers and material that's enough to provide you the best industrial business solution since 1980s with proud.",
+    question: 'What Next after the Registration ?',
+    answer: '',
   },
 ];
 

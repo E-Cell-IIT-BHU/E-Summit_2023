@@ -30,7 +30,8 @@ export default function Nav() {
     "Log Out",
   ];
 
-  const { handleGoogleSignIn, logout, user } = UserAuth();
+  const { handleGoogleSignIn, logout, user, checkRegisteration } = UserAuth();
+  checkRegisteration();
   const path = useRouter().pathname;
   return (
     <Navbar isBordered variant="sticky">

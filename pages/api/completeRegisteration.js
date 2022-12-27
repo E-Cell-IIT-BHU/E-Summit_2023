@@ -1,11 +1,4 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
 import axios from 'axios';
-
-const sdk = require('api')(
-  'https://townscript-api.readme.io/openapi/630541de9807941f67a9343a'
-);
-
 import { db } from '../../utility/firebase';
 import { doc, setDoc } from 'firebase/firestore';
 
@@ -15,12 +8,10 @@ export default function handler(req, res) {
     return res.status(404).json({ message: 'User not found!' });
   }
   const participantId = user.participant_id;
-  var token;
-  var message = 'Successfull!';
   axios
     .get(`${process.env.URL}/api/getToken`)
     .then(function (response) {
-      token = response.data.data;
+      const token = response.data.data;
       const sdk = require('api')(
         'https://townscript-api.readme.io/openapi/630541de9807941f67a9343a'
       );
@@ -49,7 +40,9 @@ export default function handler(req, res) {
               .status(200)
               .json({ flag: 1, message: 'participant successfully added' });
           }
-          res.status(200).json({ flag: 0, message: message });
+          res
+            .status(200)
+            .json({ flag: 0, message: 'participant is already registered' });
         })
         .catch((err) => console.error(err));
     })

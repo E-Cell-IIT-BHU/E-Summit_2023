@@ -9,9 +9,9 @@ const Crustinfo = () => {
       <div className={Style.container}>
         <div className={Style.containerheading}>
           <p style={{ color: "#7a7a7a", fontSize: "1.5rem" }}>
-            IT TAKES MORE THAN MAGIC
+            WHATS IN STORE?
           </p>
-          <h1>Things are just easy when building with crust.</h1>
+          <h1 style={{ fontSize: "1.2rem", padding: "0 1.5rem" }}>Network with fellow entrepreneurs, display your ingenious startup to the world, participate in enthralling competitions, and Raise funds for your venture, all in one place!</h1>
         </div>
         <div className={Style.maincontainer}>
           <motion.div
@@ -43,8 +43,8 @@ const Crustinfo = () => {
               />
             </div>
             <div className={Style.text}>
-              <h2 style={{ color: "white", fontSize: "2rem" }}>Best Gadgets</h2>
-              Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet.
+              <h2 style={{ color: "white", fontSize: "2rem" }}>Events</h2>
+              Participate in fun events and showcase your competitive skills to shine out amongst the crowd!
               <p style={{ textAlign: "center", fontSize: "2rem" }}>
                 <i className="bi bi-arrow-down"></i>
               </p>
@@ -80,9 +80,9 @@ const Crustinfo = () => {
             </div>
             <div className={Style.text}>
               <h2 style={{ color: "white", fontSize: "2rem" }}>
-                Share Success
+                Panel Discussions
               </h2>
-              Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet.
+              Join the most insightful talks with all the renowned speakers, all in one panel, and get inspired by the most illuminating minds!
               <p style={{ textAlign: "center", fontSize: "2rem" }}>
                 <i className="bi bi-arrow-down"></i>
               </p>
@@ -117,9 +117,9 @@ const Crustinfo = () => {
             </div>
             <div className={Style.text}>
               <h2 style={{ color: "white", fontSize: "1.9rem" }}>
-                Medical Insurance
+                Startup Showcase
               </h2>
-              Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet.
+              Showcase your Venture in front of VCs, Mentors, Angel Investors, and target audience and network with fellow startups.
               <p style={{ textAlign: "center", fontSize: "2rem" }}>
                 <i className="bi bi-arrow-down"></i>
               </p>

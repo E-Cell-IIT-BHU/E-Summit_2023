@@ -41,7 +41,7 @@ export const AuthContextProvider = ({ children }) => {
       const participantRef = doc(db, "participants", googleUser.uid);
       const participantSnap = await getDoc(participantRef);
       if (participantSnap.exists()) {
-        console.log("Document data:", participantSnap.data());
+        // console.log("Document data:", participantSnap.data());
         setUser(participantSnap.data());
       } else {
         const newUser = {
@@ -71,19 +71,22 @@ export const AuthContextProvider = ({ children }) => {
     };
   }, []);
   // const
-  if (user?.name && !user.isRegistered) {
-    axios({
-      method: 'post',
-      url: "api/completeRegisteration",
-      data: user
-    }).then(function (res) {
-      // console.log(res)
-      if (res.data.flag == 1) { setUser({ ...user, isRegistered: true }) };
-    }).catch(function (err) { })
+  const checkRegisteration = async () => {
+    if (user?.name && !user.isRegistered) {
+      axios({
+        method: 'post',
+        url: "api/completeRegisteration",
+        data: user
+      }).then(function (res) {
+        // console.log(res)
+        if (res.data.flag == 1) { setUser({ ...user, isRegistered: true }) };
+      }).catch(function (err) { console.log(err) })
+    }
   }
+
   return (
     <AuthContext.Provider
-      value={{ handleGoogleSignIn, user, logout, isLoggedIn }}
+      value={{ handleGoogleSignIn, user, logout, isLoggedIn, checkRegisteration }}
     >
       {children}
     </AuthContext.Provider>
