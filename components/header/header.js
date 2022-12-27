@@ -1,17 +1,17 @@
-import React from "react";
-import styles from "./header.module.scss";
-import Image from "next/image";
-import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
+import React from 'react';
+import styles from './header.module.scss';
+import Image from 'next/image';
+import Tilt from 'react-parallax-tilt';
+import { motion } from 'framer-motion';
 
 function header() {
   return (
     <div
       style={{
-        backgroundColor: "#ffffff",
+        backgroundColor: '#ffffff',
       }}
     >
-      <div className={styles.maincontainer}> 
+      <div className={styles.maincontainer}>
         <div className={styles.submaincontainer}>
           <header className={styles.header}>
             <div className={styles.container}>
@@ -19,7 +19,9 @@ function header() {
                 <div className={styles.column}>
                   <div className={styles.content}>
                     <div className={styles.heading}>
-                     <span className={styles.Eheading}> {`E-Summit '23 for`}</span>
+                      <span className={styles.Eheading}>
+                        {`E-Summit '23 for`}
+                      </span>
                       <br />
                       <span>
                         <b className={styles.diffText}>inspiration</b>
@@ -31,8 +33,8 @@ function header() {
                       <main>
                         <p className={styles.para}>
                           {/* <hr/> */}
-                          E-Summit`23 will present rays of hope so dazzling that
-                          they penetrate even the darkness that veils our eyes.
+                          {`E-Summit'23 will present rays of hope so dazzling that
+                          they penetrate even the darkness that veils our eyes.`}
                         </p>
 
                         <motion.div whileHover={{ scale: 1.004 }}>
@@ -52,16 +54,16 @@ function header() {
                   </div>
                 </div>
                 <div className={styles.column}>
-                  <div className="portcontainer">
-                    <div className="portwomen">
+                  <div className='portcontainer'>
+                    <div className='portwomen'>
                       <motion.div whileHover={{ scale: 1.11 }}>
                         <Tilt>
                           <Image
-                            src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/portrait-woman.jpg"
+                            src='https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/portrait-woman.jpg'
                             width={500}
                             height={500}
-                            className="womanimg"
-                            alt=""
+                            className='womanimg'
+                            alt=''
                           />
                         </Tilt>
                       </motion.div>

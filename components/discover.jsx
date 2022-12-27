@@ -22,13 +22,13 @@ const discover = () => {
       >
         <div className="titlefont">
           <p className="titlefont" style={{ color: "#7A7A7A" }}>
-            RELIABILITY & WORK SKILLS
+            RELIABILITY AND WORK SKILLS
           </p>
         </div>
         <div>
           <h1 className="buildingh1">
             Building hand crafted websites in no time
-          </h1> 
+          </h1>
         </div>
         <div className="titlefont">
           <i className="bi bi-check-lg " style={{ color: "orange" }}></i>&nbsp;
@@ -60,7 +60,7 @@ const discover = () => {
           },
         }}
         className="sub02"
-        style={{backgroundImage:"url(https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2022/05/sec-bg.jpg)"}}
+        style={{ backgroundImage: "url(https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2022/05/sec-bg.jpg)" }}
       >
         <div className="Circle01"></div>
         <div className="Circle02">
