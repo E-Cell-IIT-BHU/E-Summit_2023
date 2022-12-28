@@ -4,12 +4,16 @@ import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const Speaker = () => {
-  const temporary=[];
+  const temporary = [];
   // when you want to show speaker , replace temporary with Design in map function and remove coming soon
   return (
     <div>
+      <Head>
+        <title>{`Speakers | E-Summit'23 IIT BHU`}</title>
+      </Head>
       <Navbar />
       <div className={Style.heading}>Speakers</div>
       <div className={Style.heading}>Coming soon...</div>
@@ -47,11 +51,12 @@ const Speaker = () => {
                 ></div>
                 <div className={Style.sub2}></div>
                 <div className={Style.sub3}>
-                  <span className={Style.sub3info}>{data[1]}</span> <br/>
+                  <span className={Style.sub3info}>{data[1]}</span> <br />
                   <span className={Style.sub3info}>{data[2]}</span>
                   <div className={Style.title}>
-                    <div className={Style.sub33}><Link href={data[3]}>Know More</Link></div>
-                    
+                    <div className={Style.sub33}>
+                      <Link href={data[3]}>Know More</Link>
+                    </div>
                   </div>
                 </div>
               </motion.div>

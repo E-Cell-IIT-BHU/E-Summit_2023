@@ -9,104 +9,100 @@ import Amit from '../public/team/2022-2023/Amit.jpg';
 import Tanaya from '../public/team/2022-2023/Tanaya.jpg';
 import Navbar from '../components/Navbar';
 
-
 const Data = [
   {
-      "name": "Aditya Sharma",
-      "post": "Publicity,PR",
-      "img": '/team/2022-2023/aditya_sharma.jpeg'
+    name: 'Aditya Sharma',
+    post: 'Publicity,PR',
+    img: '/team/2022-2023/aditya_sharma.jpeg',
   },
   {
-      "name": "Akshay Malhotra",
-      "post": "PR",
-      "img": "/team/2022-2023/akshay_malhotra.jpeg"
+    name: 'Akshay Malhotra',
+    post: 'PR',
+    img: '/team/2022-2023/akshay_malhotra.jpeg',
   },
   {
-      "name": "Ashwat",
-      "post": "Tech Team",
-      "img": "/team/2022-2023/Ashwat.jpg"
+    name: 'Ashwat',
+    post: 'Tech Team',
+    img: '/team/2022-2023/Ashwat.jpg',
   },
   {
-      "name": "Ayush Anil",
-      "post": "Twitter",
-      "img": "/team/2022-2023/ayush_anil.jpeg"
+    name: 'Ayush Anil',
+    post: 'Twitter',
+    img: '/team/2022-2023/ayush_anil.jpeg',
   },
   {
-      "name": "Divyansh Thakre",
-      "post": "Publicity,PR",
-      "img": "/team/2022-2023/Divyansh.jpg"
+    name: 'Divyansh Thakre',
+    post: 'Publicity,PR',
+    img: '/team/2022-2023/Divyansh.jpg',
   },
   {
-      "name": "Gunjan Pandey",
-      "post": "PR",
-      "img": "/team/2022-2023/gunjan.jpg"
+    name: 'Gunjan Pandey',
+    post: 'PR',
+    img: '/team/2022-2023/gunjan.jpg',
   },
   {
-      "name": "Khushi Kapoor",
-      "post": "Content",
-      "img": "/team/2022-2023/khushi_kapoor.jpeg"
+    name: 'Khushi Kapoor',
+    post: 'Content',
+    img: '/team/2022-2023/khushi_kapoor.jpeg',
   },
   {
-      "name": "Maitrayi Komple",
-      "post": "Publicity,PR",
-      "img": "/team/2022-2023/maitrayi_komple.jpeg"
+    name: 'Maitrayi Komple',
+    post: 'Publicity,PR',
+    img: '/team/2022-2023/maitrayi_komple.jpeg',
   },
   {
-      "name": "Mansi Shrivastava",
-      "post": "Publicity,PR",
-      "img": "/team/2022-2023/mansi_shrivastava.jpeg"
+    name: 'Mansi Shrivastava',
+    post: 'Publicity,PR',
+    img: '/team/2022-2023/mansi_shrivastava.jpeg',
   },
   {
-      "name": "Megh Dokania",
-      "post": "Publicity,PR",
-      "img": "/team/2022-2023/megh_dokania.jpeg"
+    name: 'Megh Dokania',
+    post: 'Publicity,PR',
+    img: '/team/2022-2023/megh_dokania.jpeg',
   },
   {
-      "name": "Parth Gupta",
-      "post": "Publicity,PR",
-      "img": "/team/2022-2023/Parth.jpg"
+    name: 'Parth Gupta',
+    post: 'Publicity,PR',
+    img: '/team/2022-2023/Parth.jpg',
   },
   {
-      "name": "Prakhar Agrawal",
-      "post": "Publicity,PR",
-      "img": "/team/2022-2023/prakhar_agrawal.jpeg"
+    name: 'Prakhar Agrawal',
+    post: 'Publicity,PR',
+    img: '/team/2022-2023/prakhar_agrawal.jpeg',
   },
   {
-      "name": "Shreya Jain",
-      "post": "Publicity,PR",
-      "img": "/team/2022-2023/Shreya.JPG"
+    name: 'Shreya Jain',
+    post: 'Publicity,PR',
+    img: '/team/2022-2023/Shreya.JPG',
   },
   {
-      "name": "Tanya Gupta",
-      "post": "Publicity,PR",
-      "img": "/team/2022-2023/Tanya.jpeg"
+    name: 'Tanya Gupta',
+    post: 'Publicity,PR',
+    img: '/team/2022-2023/Tanya.jpeg',
   },
   {
-      "name": "Tushar Singhal",
-      "post": "Publicity,PR",
-      "img": "/team/2022-2023/tushar_singhal.jpeg"
+    name: 'Tushar Singhal',
+    post: 'Publicity,PR',
+    img: '/team/2022-2023/tushar_singhal.jpeg',
   },
   {
-      "name": "Vanshika Gupta",
-      "post": "Publicity,PR",
-      "img": "/team/2022-2023/Vanshika.jpg"
+    name: 'Vanshika Gupta',
+    post: 'Publicity,PR',
+    img: '/team/2022-2023/Vanshika.jpg',
   },
   {
-      "name": "Vecha Sumanth",
-      "post": "Publicity,PR",
-      "img": "/team/2022-2023/vecha_sumanth.jpeg"
-  }
-  
-]
+    name: 'Vecha Sumanth',
+    post: 'Publicity,PR',
+    img: '/team/2022-2023/vecha_sumanth.jpeg',
+  },
+];
 
 const Team = () => {
   return (
     <>
       <div style={{ backgroundColor: 'black', color: 'white' }}>
         <Head>
-          <title>Team</title>
-          <meta name='robots' content='index, follow' />
-          <link rel='shortcut icon' href='/favicon.ico' />
+          <title>{`Team | E-Summit'23 IIT BHU`}</title>
         </Head>
         <Navbar />
         <div className='container' style={{ paddingTop: '100px' }}>
@@ -243,7 +239,6 @@ const Team = () => {
             </div>
             <div className='team-container-1'>
               {Data.map((data, index) => (
-
                 <div className='our-team' key={index}>
                   <Image
                     src={data.img}
@@ -280,7 +275,6 @@ const Team = () => {
                     </div>
                   </div>
                 </div>
-
               ))}
             </div>
           </div>

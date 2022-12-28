@@ -3,11 +3,15 @@ import Design from "../components/Eventdetails";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import  Link  from 'next/link';
+import Link from 'next/link';
+import Head from "next/head";
 const Events = () => {
-  
+
   return (
     <div>
+      <Head>
+        <title>{`Events | E-Summit'23 IIT BHU`}</title>
+      </Head>
       <Navbar />
       <div className={Style.heading}>Events</div>
       <div className={Style.container}>
@@ -43,14 +47,14 @@ const Events = () => {
                   style={{ backgroundImage: `url(${data[0]})` }}
                 ></div>
                 <div className={Style.sub2}></div>
-                
+
                 <div className={Style.sub3}>
                   <span className={Style.sub3info}>{data[1]}</span>
                   <div className={Style.title}>
                     <div className={Style.sub33}>
-                    <Link href={data[2]}> Know More</Link>
+                      <Link href={data[2]}> Know More</Link>
                     </div>
-                    
+
                   </div>
                 </div>
               </motion.div>
