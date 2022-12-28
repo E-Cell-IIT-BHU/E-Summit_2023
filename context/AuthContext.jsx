@@ -41,14 +41,13 @@ export const AuthContextProvider = ({ children }) => {
       const participantRef = doc(db, "participants", googleUser.uid);
       const participantSnap = await getDoc(participantRef);
       if (participantSnap.exists()) {
-        // console.log("Document data:", participantSnap.data());
+        console.log("Document data:", participantSnap.data());
         setUser(participantSnap.data());
       } else {
         const newUser = {
           id: googleUser.uid,
           participant_id:
-            googleUser.uid.slice(0, 4).toLowerCase() +
-            Date.now().toString().substring(9),
+            googleUser.uid.slice(0, 8),
           name: googleUser.displayName,
           email: googleUser.email,
           avatar: googleUser.photoURL,
