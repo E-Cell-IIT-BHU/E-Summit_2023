@@ -17,11 +17,9 @@ function Helpdesk() {
     <section className={styles.container}>
       <div className={styles.row}>
         <div className={styles.col}>
-          <p className={styles.sub_heading}>CREATE UNLIMITED LAYOUTS</p>
-          <h1>From our help desk</h1>
+          <h1>FAQs</h1>
           <p className={styles.sub_para}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe,
-            perspiciatis porro deleniti nisi, mollitia, magnam
+            Get those trivial queries of yours answered.
           </p>
           <div className={styles.faq}>
             {data.map((item, i) => (

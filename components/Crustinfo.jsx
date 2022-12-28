@@ -46,9 +46,7 @@ const Crustinfo = () => {
             <div className={Style.text}>
               <h2 style={{ color: "white", fontSize: "2rem" }}>Events</h2>
              <Link href="https://unstop.com/festival/e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-75705"> Participate in fun events and showcase your competitive skills to shine out amongst the crowd!</Link>
-              <p style={{ textAlign: "center", fontSize: "2rem" }}>
-                <i className="bi bi-arrow-down"></i>
-              </p>
+              
             </div>
           </motion.div>
           <motion.div
@@ -70,7 +68,7 @@ const Crustinfo = () => {
             }}
             className={Style.sub1}
           >
-            {" "}
+            
             <div className={Style.sub1child}>
               <Image
                 src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/handsome-business-man.jpg"
@@ -84,9 +82,7 @@ const Crustinfo = () => {
               Panel Discussions
               </h2>
              <Link href="https://forms.gle/SaSZx3en58wdUejb8"> Join the most insightful talks with all the renowned speakers, all in one panel, and get inspired by the most illuminating minds!</Link>
-              <p style={{ textAlign: "center", fontSize: "2rem" }}>
-                <i className="bi bi-arrow-down"></i>
-              </p>
+              
             </div>
           </motion.div>
           <motion.div
@@ -121,9 +117,7 @@ const Crustinfo = () => {
               Startup Showcase
               </h2>
              <Link href="https://unstop.com/workshop/startup-showcase-e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-573187"> Showcase your Venture in front of VCs, Mentors, Angel Investors, and target audience and network with fellow startups.</Link>
-              <p style={{ textAlign: "center", fontSize: "2rem" }}>
-                <i className="bi bi-arrow-down"></i>
-              </p>
+              
             </div>
           </motion.div>
         </div>

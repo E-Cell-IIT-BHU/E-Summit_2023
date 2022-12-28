@@ -59,7 +59,7 @@ const discover = () => {
           },
         }}
         className="sub02"
-        style={{backgroundImage:"url(https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2022/05/sec-bg.jpg)"}}
+        style={{ backgroundImage: "url(https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2022/05/sec-bg.jpg)" }}
       >
         <div className="Circle01"></div>
         <div className="Circle02">

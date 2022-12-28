@@ -1,13 +1,13 @@
-import style from ".././styles/layoutcss.module.css";
-import { useState } from "react";
-import Image from "next/image";
-import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
-import AnimatedNumber from "animated-number-react";
+import style from '.././styles/layoutcss.module.css';
+import { useState } from 'react';
+import Image from 'next/image';
+import Tilt from 'react-parallax-tilt';
+import { motion } from 'framer-motion';
+import AnimatedNumber from 'animated-number-react';
 const Layout = () => {
-  const [count, setCount] = useState("0");
-  const [count1, setCount1] = useState("0");
-  const [count2, setCount2] = useState("0");
+  const [count, setCount] = useState('0');
+  const [count1, setCount1] = useState('0');
+  const [count2, setCount2] = useState('0');
   const [ct, setct] = useState(false);
   const formatValue = (value) => value.toFixed(0);
 
@@ -30,20 +30,20 @@ const Layout = () => {
           >
             <p>CREATE UNLIMITED LAYOUTS</p>
             <h1>Try building strong brands with our team</h1>
-            <p style={{ marginTop: "2rem" }}>
+            <p style={{ marginTop: '2rem' }}>
               We have world class engineers and material thats enough to provide
               you best industrial solution.
             </p>
             <h6>Web Design</h6>
             <div className={style.bar}>
               <span className={style.percent}>
-                {ct && <AnimatedNumber value="95" formatValue={formatValue} />}%
+                {ct && <AnimatedNumber value='95' formatValue={formatValue} />}%
               </span>
               <div
                 className={style.bardiv}
                 style={{
                   backgroundImage:
-                    "linear-gradient(90deg, #2F39D3 0%, #FF5B4A 100%)",
+                    'linear-gradient(90deg, #2F39D3 0%, #FF5B4A 100%)',
 
                   width: `${count}%`,
                 }}
@@ -54,13 +54,13 @@ const Layout = () => {
             <h6>Web Development</h6>
             <div className={style.bar}>
               <span className={style.percent}>
-                {ct && <AnimatedNumber value="80" formatValue={formatValue} />}%
+                {ct && <AnimatedNumber value='80' formatValue={formatValue} />}%
               </span>
               <div
                 className={style.bardiv}
                 style={{
                   backgroundImage:
-                    "linear-gradient(90deg, #2F39D3 0%, #FF5B4A 100%)",
+                    'linear-gradient(90deg, #2F39D3 0%, #FF5B4A 100%)',
 
                   width: `${count1}%`,
                 }}
@@ -71,13 +71,13 @@ const Layout = () => {
             <h6>Digital Marketing</h6>
             <div className={style.bar}>
               <span className={style.percent}>
-                {ct && <AnimatedNumber value="75" formatValue={formatValue} />}%
+                {ct && <AnimatedNumber value='75' formatValue={formatValue} />}%
               </span>
               <div
                 className={style.bardiv}
                 style={{
                   backgroundImage:
-                    "linear-gradient(90deg, #2F39D3 0%, #FF5B4A 100%)",
+                    'linear-gradient(90deg, #2F39D3 0%, #FF5B4A 100%)',
 
                   width: `${count2}%`,
                 }}
@@ -93,14 +93,14 @@ const Layout = () => {
           <div className={style.second}>
             <div className={style.aniback}></div>
 
-            <div className="background">
-              <motion.div whileHover={{ scale: 1.09 }} className="bg">
+            <div className='background'>
+              <motion.div whileHover={{ scale: 1.09 }} className='bg'>
                 <Tilt>
                   <Image
-                    src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/young-woman.jpg"
+                    src='https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/young-woman.jpg'
                     width={700}
                     height={700}
-                    alt=""
+                    alt=''
                   />
                 </Tilt>
               </motion.div>
