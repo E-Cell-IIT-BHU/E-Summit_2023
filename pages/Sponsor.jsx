@@ -4,10 +4,10 @@ import Footer from "../components/Footer"
 import Style from "../styles/sponsorcss.module.css"
 const Sponsor = () => {
   return (
-    <><Navbar/>
-    <div className={Style.maincontainer}>Sponsor page....</div>
-    <Footer/>
-    
+    <>
+      <Navbar />
+      <div className={Style.maincontainer}>Sponsor page....</div>
+      <Footer />
     </>
   )
 }

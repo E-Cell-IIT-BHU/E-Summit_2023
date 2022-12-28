@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 import { motion } from "framer-motion";
 const discover = () => {
   return (
@@ -20,13 +21,13 @@ const discover = () => {
       >
         <div className="titlefont">
           <p className="titlefont" style={{ color: "#7A7A7A" }}>
-          A DREAM FOR STARTUPS
+            A DREAM FOR STARTUPS
           </p>
         </div>
         <div>
           <h1 className="buildingh1">
-          Presenting the official aftermovie of E-Summit'23 
-          </h1> 
+            {`Presenting the official aftermovie of E-Summit'23`}
+          </h1>
         </div>
         <div className="titlefont">
           <i className="bi bi-check-lg " style={{ color: "orange" }}></i>&nbsp;
@@ -41,7 +42,11 @@ const discover = () => {
           Knowledge.
         </div>
         <div className="buttondis">
-        <a href="/dashboard"> <i className="bi bi-megaphone"></i>&nbsp;  Register Now </a>
+          <Link href="/dashboard">
+            <div>
+              <i className="bi bi-megaphone"></i>&nbsp;  Register Now
+            </div>
+          </Link>
         </div>
       </motion.div>
       <motion.div
@@ -60,10 +65,14 @@ const discover = () => {
         className="sub02"
         style={{ backgroundImage: "url(https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2022/05/sec-bg.jpg)" }}
       >
-      <a href="https://www.youtube.com/watch?v=Uvo1SWXoNQo"> <div className="Circle01"></div>
-        <div className="Circle02">
-        <i className="bi bi-play-fill" style={{ fontSize: "3rem" }}></i>
-        </div></a>
+        <a href="https://www.youtube.com/watch?v=Uvo1SWXoNQo">
+          <div>
+            <div className="Circle01"></div>
+            <div className="Circle02">
+              <i className="bi bi-play-fill" style={{ fontSize: "3rem" }}></i>
+            </div>
+          </div>
+        </a>
       </motion.div>
     </div>
   );

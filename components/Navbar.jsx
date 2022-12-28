@@ -51,7 +51,7 @@ export default function Nav() {
             ACME
           </Text>
         </Navbar.Brand> */}
-        <Image src={Logo} width={200} height={200} alt="logo"/>
+        <Image src={Logo} width={200} height={200} alt="logo" />
 
       </Link>
 
