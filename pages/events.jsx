@@ -3,11 +3,9 @@ import Design from "../components/Eventdetails";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { useSession, signIn } from "next-auth/react"
-
+import  Link  from 'next/link';
 const Events = () => {
-  const { data: session } = useSession()
-  console.log(session);
+  
   return (
     <div>
       <Navbar />
@@ -45,27 +43,14 @@ const Events = () => {
                   style={{ backgroundImage: `url(${data[0]})` }}
                 ></div>
                 <div className={Style.sub2}></div>
-                <div className={Style.sub21}>
-                  <div className={Style.sub22}>
-                    <i className="bi bi-search"></i>
-                  </div>
-                  <div className={Style.sub23}>
-                    <i className="bi bi-link-45deg"></i>
-                  </div>
-                </div>
+                
                 <div className={Style.sub3}>
                   <span className={Style.sub3info}>{data[1]}</span>
                   <div className={Style.title}>
                     <div className={Style.sub33}>
-                      More
+                    <Link href={data[2]}> Know More</Link>
                     </div>
-                    {!session ? <>
-                      <div className={Style.sub33} onClick={() => signIn()}>
-                        Registration
-                      </div>
-                    </> : null
-
-                    }
+                    
                   </div>
                 </div>
               </motion.div>

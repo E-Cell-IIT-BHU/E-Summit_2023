@@ -3,6 +3,10 @@ import Image from "next/image";
 import Style from "../styles/crustinfocss.module.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Eventimg from ".././assets/Events.jpg"
+import Panel_disimg from ".././assets/panel_discussion.jpg"
+import Startupimg from ".././assets/startup_tradeshow.jpg"
+
 
 const Crustinfo = () => {
   return (
@@ -36,7 +40,7 @@ const Crustinfo = () => {
           >
             <div className={Style.sub1child}>
               <Image
-                src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/business-man-working.jpg"
+                src={Eventimg}
                 width={200}
                 height={200}
                 className={Style.sub1child}
@@ -44,8 +48,8 @@ const Crustinfo = () => {
               />
             </div>
             <div className={Style.text}>
-              <h2 style={{ color: "white", fontSize: "2rem" }}>Events</h2>
-             <Link href="https://unstop.com/festival/e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-75705"> Participate in fun events and showcase your competitive skills to shine out amongst the crowd!</Link>
+            <h2 style={{ color: "white", fontSize: "2rem" }}>  <Link href="/events"> Events</Link></h2>
+              Participate in fun events and showcase your competitive skills to shine out amongst the crowd!
               
             </div>
           </motion.div>
@@ -71,17 +75,18 @@ const Crustinfo = () => {
             
             <div className={Style.sub1child}>
               <Image
-                src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/handsome-business-man.jpg"
+                src={Panel_disimg}
                 width={200}
                 height={200}
                 alt=""
               />
             </div>
             <div className={Style.text}>
-              <h2 style={{ color: "white", fontSize: "2rem" }}>
+            <h2 style={{ color: "white", fontSize: "2rem" }}><Link href="/dashboard">  
               Panel Discussions
-              </h2>
-             <Link href="https://forms.gle/SaSZx3en58wdUejb8"> Join the most insightful talks with all the renowned speakers, all in one panel, and get inspired by the most illuminating minds!</Link>
+            
+              </Link>  </h2>
+              Join the most insightful talks with all the renowned speakers, all in one panel, and get inspired by the most illuminating minds!
               
             </div>
           </motion.div>
@@ -106,17 +111,18 @@ const Crustinfo = () => {
           >
             <div className={Style.sub1child}>
               <Image
-                src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/coworkers-team.jpg"
+                src={Startupimg}
                 width={200}
                 height={200}
                 alt=""
               />
             </div>
             <div className={Style.text}>
-              <h2 style={{ color: "white", fontSize: "1.9rem" }}>
+            <h2 style={{ color: "white", fontSize: "1.9rem" }}>
+            <Link href="https://unstop.com/workshop/startup-showcase-e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-573187">  
               Startup Showcase
-              </h2>
-             <Link href="https://unstop.com/workshop/startup-showcase-e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-573187"> Showcase your Venture in front of VCs, Mentors, Angel Investors, and target audience and network with fellow startups.</Link>
+             </Link> </h2>
+             Showcase your Venture in front of VCs, Mentors, Angel Investors, and target audience and network with fellow startups.
               
             </div>
           </motion.div>

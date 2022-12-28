@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
 const discover = () => {
   return (
     <div className="maincontainer01">
@@ -42,7 +41,7 @@ const discover = () => {
           Knowledge.
         </div>
         <div className="buttondis">
-          <i className="bi bi-megaphone"></i>&nbsp; Discover More
+        <a href="/dashboard"> <i className="bi bi-megaphone"></i>&nbsp;  Register Now </a>
         </div>
       </motion.div>
       <motion.div
@@ -61,10 +60,10 @@ const discover = () => {
         className="sub02"
         style={{ backgroundImage: "url(https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2022/05/sec-bg.jpg)" }}
       >
-        <div className="Circle01"></div>
+      <a href="https://www.youtube.com/watch?v=Uvo1SWXoNQo"> <div className="Circle01"></div>
         <div className="Circle02">
-          <i className="bi bi-play-fill" style={{ fontSize: "3rem" }}></i>
-        </div>
+        <i className="bi bi-play-fill" style={{ fontSize: "3rem" }}></i>
+        </div></a>
       </motion.div>
     </div>
   );

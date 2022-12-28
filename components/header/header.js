@@ -36,7 +36,7 @@ function header() {
                         <motion.div whileHover={{ scale: 1.004 }}>
                           <Tilt>
                             <button className={styles.button1}>
-                              <a> Register Now </a>
+                              <a href="/dashboard"> Register Now </a>
                             </button>
                           </Tilt>
                         </motion.div>

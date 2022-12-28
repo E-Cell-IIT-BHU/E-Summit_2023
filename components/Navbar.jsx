@@ -10,10 +10,12 @@ import {
 // import { AcmeLogo } from "./AcmeLogo.js";
 import { UserAuth } from "../context/AuthContext";
 // import { Link as NextLink } from "next/link"
+import Logo from "../assets/ecelllogo.png"
+import Image from "next/image"
 
 import { useRouter } from "next/router";
 
-const navItems = [{ name: "Home", page: "/" }, { name: "Events", page: "/events" }, { name: "Speakers", page: "/speaker" }, { name: "Team", page: "/Team" }]
+const navItems = [{ name: "Home", page: "/" }, { name: "Events", page: "/events" }, { name: "Speakers", page: "/speaker" }, { name: "Team", page: "/Team" }, { name: "Sponsor", page: "/Sponsor" }]
 
 export default function Nav() {
   const router = useRouter();
@@ -37,18 +39,20 @@ export default function Nav() {
     <Navbar isBordered variant="sticky">
       <Navbar.Toggle showIn="xs" />
       <Link href="/">
-        <Navbar.Brand
+        {/* <Navbar.Brand
           css={{
             "@xs": {
               w: "12%",
             },
           }}
         >
-          {/* <AcmeLogo /> */}
+       
           <Text b color="inherit" hideIn="xs">
             ACME
           </Text>
-        </Navbar.Brand>
+        </Navbar.Brand> */}
+        <Image src={Logo} width={200} height={200} alt="logo"/>
+
       </Link>
 
       <Navbar.Content

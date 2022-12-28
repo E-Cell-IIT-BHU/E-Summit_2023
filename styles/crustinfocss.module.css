@@ -38,7 +38,7 @@
 }
 .text {
   position: absolute;
-  bottom: 1rem;
+  bottom: 2.5rem;
   margin: 1rem 1.5rem;
 }
 @media screen and (max-width: 980px) {
