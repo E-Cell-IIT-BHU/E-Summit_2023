@@ -2,6 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Style from "../styles/crustinfocss.module.css";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import Eventimg from ".././assets/Events.jpg"
+import Panel_disimg from ".././assets/panel_discussion.jpg"
+import Startupimg from ".././assets/startup_tradeshow.jpg"
+
 
 const Crustinfo = () => {
   return (
@@ -9,9 +14,9 @@ const Crustinfo = () => {
       <div className={Style.container}>
         <div className={Style.containerheading}>
           <p style={{ color: "#7a7a7a", fontSize: "1.5rem" }}>
-            WHATS IN STORE?
+          Whats In Store?
           </p>
-          <h1 style={{ fontSize: "1.2rem", padding: "0 1.5rem" }}>Network with fellow entrepreneurs, display your ingenious startup to the world, participate in enthralling competitions, and Raise funds for your venture, all in one place!</h1>
+          <h1 style={{width:"80%",margin:"auto"}}>Network with fellow entrepreneurs, display your ingenious startup to the world, participate in enthralling competitions, and Raise funds for your venture, all in one place!</h1>
         </div>
         <div className={Style.maincontainer}>
           <motion.div
@@ -35,7 +40,7 @@ const Crustinfo = () => {
           >
             <div className={Style.sub1child}>
               <Image
-                src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/business-man-working.jpg"
+                src={Eventimg}
                 width={200}
                 height={200}
                 className={Style.sub1child}
@@ -43,11 +48,9 @@ const Crustinfo = () => {
               />
             </div>
             <div className={Style.text}>
-              <h2 style={{ color: "white", fontSize: "2rem" }}>Events</h2>
+            <h2 style={{ color: "white", fontSize: "2rem" }}>  <Link href="/events"> Events</Link></h2>
               Participate in fun events and showcase your competitive skills to shine out amongst the crowd!
-              <p style={{ textAlign: "center", fontSize: "2rem" }}>
-                <i className="bi bi-arrow-down"></i>
-              </p>
+              
             </div>
           </motion.div>
           <motion.div
@@ -69,23 +72,22 @@ const Crustinfo = () => {
             }}
             className={Style.sub1}
           >
-            {" "}
+            
             <div className={Style.sub1child}>
               <Image
-                src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/handsome-business-man.jpg"
+                src={Panel_disimg}
                 width={200}
                 height={200}
                 alt=""
               />
             </div>
             <div className={Style.text}>
-              <h2 style={{ color: "white", fontSize: "2rem" }}>
-                Panel Discussions
-              </h2>
+            <h2 style={{ color: "white", fontSize: "2rem" }}><Link href="/dashboard">  
+              Panel Discussions
+            
+              </Link>  </h2>
               Join the most insightful talks with all the renowned speakers, all in one panel, and get inspired by the most illuminating minds!
-              <p style={{ textAlign: "center", fontSize: "2rem" }}>
-                <i className="bi bi-arrow-down"></i>
-              </p>
+              
             </div>
           </motion.div>
           <motion.div
@@ -109,20 +111,19 @@ const Crustinfo = () => {
           >
             <div className={Style.sub1child}>
               <Image
-                src="https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/coworkers-team.jpg"
+                src={Startupimg}
                 width={200}
                 height={200}
                 alt=""
               />
             </div>
             <div className={Style.text}>
-              <h2 style={{ color: "white", fontSize: "1.9rem" }}>
-                Startup Showcase
-              </h2>
-              Showcase your Venture in front of VCs, Mentors, Angel Investors, and target audience and network with fellow startups.
-              <p style={{ textAlign: "center", fontSize: "2rem" }}>
-                <i className="bi bi-arrow-down"></i>
-              </p>
+            <h2 style={{ color: "white", fontSize: "1.9rem" }}>
+            <Link href="https://unstop.com/workshop/startup-showcase-e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-573187">  
+              Startup Showcase
+             </Link> </h2>
+             Showcase your Venture in front of VCs, Mentors, Angel Investors, and target audience and network with fellow startups.
+              
             </div>
           </motion.div>
         </div>

@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
-
 const discover = () => {
   return (
     <div className="maincontainer01">
@@ -22,28 +20,28 @@ const discover = () => {
       >
         <div className="titlefont">
           <p className="titlefont" style={{ color: "#7A7A7A" }}>
-            RELIABILITY AND WORK SKILLS
+          A DREAM FOR STARTUPS
           </p>
         </div>
         <div>
           <h1 className="buildingh1">
-            Building hand crafted websites in no time
-          </h1>
+          Presenting the official aftermovie of E-Summit'23 
+          </h1> 
         </div>
         <div className="titlefont">
           <i className="bi bi-check-lg " style={{ color: "orange" }}></i>&nbsp;
-          Re-usable components.
+          A Justapoxication of startups.
         </div>
         <div className="titlefont">
           <i className="bi bi-check-lg" style={{ color: "orange" }}></i>&nbsp;
-          Amazing photo gallery.
+          Dreams.
         </div>
         <div className="titlefont">
           <i className="bi bi-check-lg" style={{ color: "orange" }}></i>&nbsp;
-          Professional designs.
+          Knowledge.
         </div>
         <div className="buttondis">
-          <i className="bi bi-megaphone"></i>&nbsp; Discover More
+        <a href="/dashboard"> <i className="bi bi-megaphone"></i>&nbsp;  Register Now </a>
         </div>
       </motion.div>
       <motion.div
@@ -62,10 +60,10 @@ const discover = () => {
         className="sub02"
         style={{ backgroundImage: "url(https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2022/05/sec-bg.jpg)" }}
       >
-        <div className="Circle01"></div>
+      <a href="https://www.youtube.com/watch?v=Uvo1SWXoNQo"> <div className="Circle01"></div>
         <div className="Circle02">
-          <i className="bi bi-play-fill" style={{ fontSize: "3rem" }}></i>
-        </div>
+        <i className="bi bi-play-fill" style={{ fontSize: "3rem" }}></i>
+        </div></a>
       </motion.div>
     </div>
   );

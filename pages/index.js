@@ -33,10 +33,10 @@ export default function Home() {
           <HeaderMain />
           <Crustinfo />
           <Discover />
-          <Layout />
+          {/* <Layout /> */}
           <Workinfo />
-          <Professiondesign />
-          <Awesomefeature />
+          {/* <Professiondesign /> */}
+          {/* <Awesomefeature /> */}
           <Helpdesk />
           <Testimonial />
           {/* <Helpdesk /> */}
