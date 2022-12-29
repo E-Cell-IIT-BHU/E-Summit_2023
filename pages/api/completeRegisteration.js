@@ -21,11 +21,20 @@ export default function handler(req, res) {
           authorization: token,
         })
         .then(({ data }) => {
-          const participants = Object.entries(JSON.parse(data.data));
-          const participant = participants.find(
-            (participant) => participant[1].customQuestion1 == participantId
-          );
-          // console.log(participant);
+          const participants = JSON.parse(data.data);
+          // console.log('Participants: ', participants);
+          var participant;
+          if (Array.isArray(participants)) {
+            participant = participants.find(
+              (participant) => participant.customQuestion1 == participantId
+            );
+          } else if (
+            participants?.customQuestion1 &&
+            participants.customQuestion1 == participantId
+          ) {
+            participant = participants;
+          }
+          // console.log('Participant: ', participant);
           if (!participant) {
             return res
               .status(200)
@@ -35,10 +44,13 @@ export default function handler(req, res) {
             setDoc(doc(db, 'participants', user.id), {
               ...user,
               isRegistered: true,
+              ticketDetails: participant,
             });
-            return res
-              .status(200)
-              .json({ flag: 1, message: 'participant successfully added' });
+            return res.status(200).json({
+              flag: 1,
+              ticketDetails: participant,
+              message: 'participant successfully added',
+            });
           }
           res
             .status(200)
