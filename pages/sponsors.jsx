@@ -10,7 +10,7 @@ const Sponsor = () => {
         <title>{`Sponsors | E-Summit'23 IIT BHU`}</title>
       </Head>
       <Navbar />
-      <div className={Style.maincontainer}>Sponsor page....</div>
+      <div className={Style.maincontainer}>Declaring Soon...</div>
       <Footer />
     </>
   )

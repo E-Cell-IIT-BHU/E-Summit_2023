@@ -81,33 +81,29 @@ export default function Footer() {
               <li>
                 <Link
                   className='text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75'
-                  href='/'
+                  href='https://cd.ecelliitbhu.com/'
                   target='_blank'
                   rel='noreferrer'
                 >
-                  Uses
+                  Campus Director
                 </Link>
               </li>
 
               <li>
                 <Link
                   className='text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75'
-                  href='/'
-                  target='_blank'
-                  rel='noreferrer'
+                  href='/events'
                 >
-                  Blog
+                  Events
                 </Link>
               </li>
 
               <li>
                 <Link
                   className='text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75'
-                  href='/'
-                  target='_blank'
-                  rel='noreferrer'
+                  href='/sponsors'
                 >
-                  Portfolio
+                  Sponsors
                 </Link>
               </li>
             </ul>
