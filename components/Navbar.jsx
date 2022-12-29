@@ -15,23 +15,10 @@ import Image from "next/image"
 
 import { useRouter } from "next/router";
 
-const navItems = [{ name: "Home", page: "/" }, { name: "Events", page: "/events" }, { name: "Speakers", page: "/speaker" }, { name: "Team", page: "/Team" }, { name: "Sponsor", page: "/Sponsor" }]
+const navItems = [{ name: "Home", page: "/" }, { name: "Events", page: "/events" }, { name: "Speakers", page: "/speaker" }, { name: "Sponsor", page: "/Sponsor" }]
 
 export default function Nav() {
   const router = useRouter();
-  const collapseItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Profile",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
-
   const { handleGoogleSignIn, logout, user, checkRegisteration } = UserAuth();
   checkRegisteration();
   const path = useRouter().pathname;
@@ -61,9 +48,9 @@ export default function Nav() {
         hideIn="xs"
         variant="highlight-rounded"
       >
-        {navItems.map((item, id) => {
-          return path === item.page ? <Navbar.Link key={id} isActive href={item.page}>{item.name}</Navbar.Link> : <Navbar.Link key={id} href={item.page}>{item.name}</Navbar.Link>;
-        })}
+        {navItems.map((item, id) => (
+          <Navbar.Link key={id} isActive={path == item.page} href={item.page}>{item.name}</Navbar.Link>
+        ))}
       </Navbar.Content>
 
       <Navbar.Content
@@ -137,23 +124,20 @@ export default function Nav() {
         )}
       </Navbar.Content>
       <Navbar.Collapse>
-        {collapseItems.map((item, index) => (
+        {navItems.map((item, index) => (
           <Navbar.CollapseItem
-            key={item}
+            key={index}
             activeColor="secondary"
-            css={{
-              color: index === collapseItems.length - 1 ? "$error" : "",
-            }}
-            isActive={index === 2}
+            isActive={path == item.page}
           >
             <Link
               color="inherit"
               css={{
                 minWidth: "100%",
               }}
-              href="#"
+              href={item.page}
             >
-              {item}
+              {item.name}
             </Link>
           </Navbar.CollapseItem>
         ))}
