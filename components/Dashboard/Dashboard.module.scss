@@ -150,6 +150,17 @@
     flex-direction: column;
   }
 }
+@media (max-width: 1200px) {
+  .horizontalTicket {
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) {
+  .verticalTicket {
+    display: none;
+  }
+}
 @media (max-width: 770px) {
   .container1 {
     padding: 1.5%;

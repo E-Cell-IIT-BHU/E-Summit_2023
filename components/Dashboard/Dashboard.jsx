@@ -1,8 +1,104 @@
 import React, { Component, useEffect } from "react";
 import style from "./Dashboard.module.scss";
 import Image from "next/image";
+import ticketImage from "../../assets/E-summit_ticket.jpg"
+import ticketImage2 from "../../assets/E-summit_ticket2.jpg"
 import { useRouter } from "next/router";
 import { UserAuth } from "../../context/AuthContext";
+import { Card, Col, Text, Row } from "@nextui-org/react";
+
+export const TicketCardHorizontal = ({ details }) => {
+  return (
+    <Card Card css={{ bg: "$black", w: "100%", h: "100%" }} className={style.horizontalTicket}>
+      <Card.Header css={{ position: "absolute", zIndex: 1, top: 5, h: "100%" }}>
+        <Col style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", height: "100%" }}>
+          <Row>
+            <Col>
+              <Text size={40} weight="bold" transform="uppercase" color="#FFFBEB" className={style.rotated} style={{ fontFamily: "monospace" }}>
+                {`E-Summit'23 IIT BHU`}
+              </Text>
+            </Col>
+            <Col>
+              <Text size={30} weight="bold" transform="uppercase" color="#FFFBEB" style={{ textAlign: "right", fontFamily: "monospace" }}>
+                {details.allTicketName}
+              </Text>
+              <Text size={30} weight="bold" transform="uppercase" color="#FFFBEB" style={{ textAlign: "right", fontFamily: "monospace" }}>
+                {details.currency + " " + details.totalTicketAmount}
+              </Text>
+            </Col>
+          </Row>
+          <Row style={{ float: "bottom" }}>
+            <Col>
+              <Text size={35} weight="bold" transform="uppercase" color="#FFFBEB" style={{ fontFamily: "monospace" }}>
+                {details.userName}
+              </Text>
+            </Col>
+            <Col>
+              <Text size={18} style={{ textAlign: "right", fontFamily: "monospace" }} weight="bold" transform="uppercase" color="#FFFBEB">
+                Order ID: {details.uniqueOrderId}
+              </Text>
+            </Col>
+          </Row>
+        </Col>
+      </Card.Header>
+      <Image
+        src={ticketImage}
+        width="1829"
+        height="555"
+        objectFit="cover"
+        alt="Card image background"
+        style={{ filter: "brightness(70%)" }}
+      />
+    </Card >
+  );
+}
+
+export const TicketCardVertical = ({ details }) => {
+  return (
+    <Card Card css={{ bg: "$black", w: "320px", h: "100%" }} className={style.verticalTicket}>
+      <Card.Header css={{ position: "absolute", zIndex: 1, top: 5, h: "100%" }}>
+        <Col style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", height: "100%" }}>
+          <Row>
+            <Col>
+              <Text size={20} weight="bold" transform="uppercase" color="#FFFBEB" className={style.rotated} style={{ fontFamily: "monospace" }}>
+                {`E-Summit'23 IIT BHU`}
+              </Text>
+            </Col>
+            <Col>
+              <Text size={15} weight="bold" transform="uppercase" color="#FFFBEB" style={{ textAlign: "right", fontFamily: "monospace" }}>
+                {details.allTicketName}
+              </Text>
+              <Text size={15} weight="bold" transform="uppercase" color="#FFFBEB" style={{ textAlign: "right", fontFamily: "monospace" }}>
+                {details.currency + " " + details.totalTicketAmount}
+              </Text>
+            </Col>
+          </Row>
+          <Row style={{ float: "bottom" }}>
+            <Col>
+              <Text size={22} weight="bold" transform="uppercase" color="#FFFBEB" style={{ fontFamily: "monospace" }}>
+                {details.userName}
+              </Text>
+            </Col>
+            <Col style={{ transform: "rotate(90deg)", position: "relative", bottom: "40px", right: "-40px" }}>
+              <Text size={12} style={{ textAlign: "right", fontFamily: "monospace", width: "190px" }} weight="bold" transform="uppercase" color="#FFFBEB">
+                Order ID: {details.uniqueOrderId}
+              </Text>
+            </Col>
+          </Row>
+        </Col>
+      </Card.Header>
+      <Image
+        src={ticketImage2}
+        width="953"
+        height="1579"
+        objectFit="cover"
+        alt="Card image background"
+        style={{ filter: "brightness(70%)" }}
+      />
+    </Card >
+  );
+}
+
 
 const Loader = () => {
   return (
@@ -63,7 +159,9 @@ const Dashboard = () => {
           {user.isRegistered ? <div>
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
               <h1 className={style.data} style={{ color: "#38E54D" }}>You are registered!</h1>
-              <h1 className={style.data} style={{ color: "#38E54D" }}>Please check your mail for the ticket</h1>
+              {/* <h1 className={style.data} style={{ color: "#c084fc" }}>Your Ticket Details:-</h1> */}
+              <TicketCardHorizontal details={user.ticketDetails} />
+              <TicketCardVertical details={user.ticketDetails} />
             </div>
           </div> : <iframe src={`https://www.townscript.com/v2/widget/esummit-2023-iit-bhu-343224/booking?td-ticket-name-1=5&td-ticket-name-2=6&name=${user.name}&emailid=${user.email}&cq1=${user.participant_id}`} frameBorder="0" height="600px" width="100%"></iframe>}
         </div>

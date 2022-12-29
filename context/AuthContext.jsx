@@ -78,7 +78,7 @@ export const AuthContextProvider = ({ children }) => {
         data: user
       }).then(function (res) {
         // console.log(res)
-        if (res.data.flag == 1) { setUser({ ...user, isRegistered: true }) };
+        if (res.data.flag == 1) { setUser({ ...user, isRegistered: true, ticketDetails: res.data.ticketDetails }) };
       }).catch(function (err) { console.log(err) })
     }
   }
