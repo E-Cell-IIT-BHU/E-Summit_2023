@@ -14,9 +14,9 @@ const Crustinfo = () => {
       <div className={Style.container}>
         <div className={Style.containerheading}>
           <p style={{ color: "#7a7a7a", fontSize: "1.5rem" }}>
-          Whats In Store?
+            Whats In Store?
           </p>
-          <h1 style={{width:"80%",margin:"auto"}}>Network with fellow entrepreneurs, display your ingenious startup to the world, participate in enthralling competitions, and Raise funds for your venture, all in one place!</h1>
+          <h1 style={{ width: "80%", margin: "auto" }}>Network with fellow entrepreneurs, display your ingenious startup to the world, participate in enthralling competitions, and Raise funds for your venture, all in one place!</h1>
         </div>
         <div className={Style.maincontainer}>
           <motion.div
@@ -39,18 +39,23 @@ const Crustinfo = () => {
             className={Style.sub1}
           >
             <div className={Style.sub1child}>
-            <a href="/events"> <Image
-                src={Eventimg}
-                width={200}
-                height={200}
-                className={Style.sub1child}
-                alt=""
-              /></a>
+              <Link href="/events">
+                <div>
+                  <Image
+                    src={Eventimg}
+                    width={200}
+                    height={200}
+                    className={Style.sub1child}
+                    alt=""
+                  />
+                </div>
+              </Link>
             </div>
             <div className={Style.text}>
-            <h2 style={{ color: "white", fontSize: "2rem" }}>  <Link href="/events"> Events</Link></h2>
+              <h2 style={{ color: "white", fontSize: "2rem" }}>
+                <Link href="/events"> Events</Link>
+              </h2>
               Participate in fun events and showcase your competitive skills to shine out amongst the crowd!
-              
             </div>
           </motion.div>
           <motion.div
@@ -72,22 +77,26 @@ const Crustinfo = () => {
             }}
             className={Style.sub1}
           >
-            
+
             <div className={Style.sub1child}>
-            <a href="/dashboard">   <Image
-                src={Panel_disimg}
-                width={200}
-                height={200}
-                alt=""
-              /></a>
+              <Link href="/dashboard">
+                <div>
+                  <Image
+                    src={Panel_disimg}
+                    width={200}
+                    height={200}
+                    alt=""
+                  />
+                </div>
+              </Link>
             </div>
             <div className={Style.text}>
-            <h2 style={{ color: "white", fontSize: "2rem" }}><Link href="/dashboard">  
-              Panel Discussions
-            
+              <h2 style={{ color: "white", fontSize: "2rem" }}><Link href="/dashboard">
+                Panel Discussions
+
               </Link>  </h2>
               Join the most insightful talks with all the renowned speakers, all in one panel, and get inspired by the most illuminating minds!
-              
+
             </div>
           </motion.div>
           <motion.div
@@ -110,20 +119,24 @@ const Crustinfo = () => {
             className={Style.sub1}
           >
             <div className={Style.sub1child}>
-            <a href="https://unstop.com/workshop/startup-showcase-e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-573187">   <Image
-                src={Startupimg}
-                width={200}
-                height={200}
-                alt=""
-              /></a>
+              <Link href="https://unstop.com/workshop/startup-showcase-e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-573187">
+                <div>
+                  <Image
+                    src={Startupimg}
+                    width={200}
+                    height={200}
+                    alt=""
+                  />
+                </div>
+              </Link>
             </div>
             <div className={Style.text}>
-            <h2 style={{ color: "white", fontSize: "1.9rem" }}>
-            <Link href="https://unstop.com/workshop/startup-showcase-e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-573187">  
-              Startup Showcase
-             </Link> </h2>
-             Showcase your Venture in front of VCs, Mentors, Angel Investors, and target audience and network with fellow startups.
-              
+              <h2 style={{ color: "white", fontSize: "1.9rem" }}>
+                <Link href="https://unstop.com/workshop/startup-showcase-e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-573187">
+                  Startup Showcase
+                </Link> </h2>
+              Showcase your Venture in front of VCs, Mentors, Angel Investors, and target audience and network with fellow startups.
+
             </div>
           </motion.div>
         </div>
