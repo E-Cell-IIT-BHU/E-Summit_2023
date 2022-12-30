@@ -15,7 +15,7 @@ import Image from "next/image"
 
 import { useRouter } from "next/router";
 
-const navItems = [{ name: "Home", page: "/" }, { name: "Events", page: "/events" }, { name: "Speakers", page: "/speaker" }, { name: "Sponsors", page: "/Sponsors" }]
+const navItems = [{ name: "Home", page: "/" }, { name: "Events", page: "/events" }, { name: "Speakers", page: "/speaker" }, { name: "Sponsors", page: "/sponsors" }]
 
 export default function Nav() {
   const router = useRouter();

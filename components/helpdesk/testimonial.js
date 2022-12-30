@@ -7,8 +7,7 @@ import "react-slideshow-image/dist/styles.css";
 const Testimonial = () => {
   const zoomInProperties = {
     indicators: true,
-    // scale: 1.2,
-    duration: 1000,
+    duration: 3000,
     loop: true,
     transitionDuration: 1000,
     infinite: true,
@@ -48,15 +47,14 @@ const Testimonial = () => {
           <div className={styles.submaincontainer}>
             <div className={styles.row}>
               <div className={styles.col} id={styles.id1}>
-                <p>CLIENTS OPINION</p>
-                <h1>
-                  What Our <br /> Clients said
+                <p style={{marginTop:"2rem"}}>PARTICIPANTS OPINION</p>
+                <h1 style={{marginBottom:"2rem"}}>
+                  What Our <br /> Participants said
                 </h1>
-                {/* <h1>Clients said</h1> */}
               </div>
 
               <div className={styles.col}>
-                <Zoom {...zoomInProperties}>
+                <Zoom {...zoomInProperties}  >
                   {data.map((item, i) => (
                     <div key={i}>
                       <Image
@@ -80,22 +78,29 @@ const Testimonial = () => {
 };
 const data = [
   {
-    name: "Naveen Kumar",
-    desc: "When I moved to Bangalore from Chennai, I went to multiple websites to get a bed until I found out about Rentomojo. I rented a bed and mattress, just to try it out. They delivered it within a day and set it up at my place without any hassle. Now I sleep so peacefully that I always end up being late.",
+    name: "Rahul Malik, IIT Kharagpur",
+    desc: `E-Summit'20 scheduling of talks, allowing ample breaks, refueling & networking was spot on.
+    Diverse, smoothly run & down-
+    to-earth.`,
     imgurl:
-      "https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/avatar-2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg",
   },
   {
-    name: "Kaushal Tiwari",
-    desc: " I went to multiple websites to get a bed until I found out about Rentomojo. I rented a bed and mattress, just to try it out. They delivered it within a day and set it up at my place without any hassle. Now I sleep so peacefully that I always end up being late for .",
+    name: "Ankita Goyal, IIT Kanpur",
+    desc: `What a fantastic day it's been at
+    E-Summit 20. Huge shout out to the team for connecting us all and making this amazing event
+    possible.`,
     imgurl:
-      "https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/young-people.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg",
   },
   {
-    name: "Mahi Roy",
-    desc: "Bangalore from Chennai, I went to multiple websites to get a bed until I found out about Rentomojo. I rented a bed and mattress, just to try it out. They delivered it within a day and set it up at my place without any hassle. Now I sleep so peacefully that I always end up being late for work :",
+    name: "Raj Parekh MNNIT",
+    desc: `Great vibe @esummit20. Loved
+    the talks and events of the fest.
+    Everthing was well organized and the organizers were very
+    polite`,
     imgurl:
-      "https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2021/11/avatar-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg",
   },
 ];
 

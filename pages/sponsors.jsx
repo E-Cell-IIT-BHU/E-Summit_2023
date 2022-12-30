@@ -13,7 +13,7 @@ const Sponsor = () => {
         <title>{`Sponsors | E-Summit'23 IIT BHU`}</title>
       </Head>
       <Navbar />
-      <div className={Style.maincontainer}>Sponsor page....</div>
+      <div className={Style.maincontainer}>Sponsors page....</div>
       {/* <div className={Style.maincontainer}>
         <div className={Style.container}>
           <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>

@@ -39,13 +39,13 @@ const Crustinfo = () => {
             className={Style.sub1}
           >
             <div className={Style.sub1child}>
-              <Image
+            <a href="/events"> <Image
                 src={Eventimg}
                 width={200}
                 height={200}
                 className={Style.sub1child}
                 alt=""
-              />
+              /></a>
             </div>
             <div className={Style.text}>
             <h2 style={{ color: "white", fontSize: "2rem" }}>  <Link href="/events"> Events</Link></h2>
@@ -74,12 +74,12 @@ const Crustinfo = () => {
           >
             
             <div className={Style.sub1child}>
-              <Image
+            <a href="/dashboard">   <Image
                 src={Panel_disimg}
                 width={200}
                 height={200}
                 alt=""
-              />
+              /></a>
             </div>
             <div className={Style.text}>
             <h2 style={{ color: "white", fontSize: "2rem" }}><Link href="/dashboard">  
@@ -110,12 +110,12 @@ const Crustinfo = () => {
             className={Style.sub1}
           >
             <div className={Style.sub1child}>
-              <Image
+            <a href="https://unstop.com/workshop/startup-showcase-e-summit23-iit-bhu-indian-institute-of-technology-iit-bhu-varanasi-573187">   <Image
                 src={Startupimg}
                 width={200}
                 height={200}
                 alt=""
-              />
+              /></a>
             </div>
             <div className={Style.text}>
             <h2 style={{ color: "white", fontSize: "1.9rem" }}>
