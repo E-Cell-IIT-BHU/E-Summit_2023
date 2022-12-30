@@ -21,7 +21,7 @@ const Workinfo = () => {
         <motion.div
           className='workCard'
           whileHover={{
-            width: '17rem',
+            width: '16rem',
             height: '12rem',
           }}
         >
@@ -29,15 +29,15 @@ const Workinfo = () => {
             <i className='bi bi-clock'></i>
           </div>
           <div className='secondchild'>
-            {ct && <AnimatedNumber value='50' formatValue={formatValue} />}K
-            <div className='secondsubchild'>Work Hours</div>
+            {ct && <AnimatedNumber value='9000' formatValue={formatValue} />}+
+            <div className='secondsubchild'>Attendees</div>
           </div>
         </motion.div>
       </Tilt>
       <Tilt>
         <motion.div
           whileHover={{
-            width: '17rem',
+            width: '16rem',
             height: '12rem',
           }}
           className='workCard'
@@ -46,15 +46,15 @@ const Workinfo = () => {
             <i className='bi bi-person'></i>
           </div>
           <div className='secondchild'>
-            {ct && <AnimatedNumber value='740' formatValue={formatValue} />}
-            <div className='secondsubchild'>Customers</div>
+            {ct && <AnimatedNumber value='30' formatValue={formatValue} />}+
+            <div className='secondsubchild'>Guest Speakers</div>
           </div>
         </motion.div>
       </Tilt>
       <Tilt>
         <motion.div
           whileHover={{
-            width: '17rem',
+            width: '16rem',
             height: '12rem',
           }}
           className='workCard'
@@ -63,15 +63,15 @@ const Workinfo = () => {
             <i className='bi bi-files'></i>
           </div>
           <div className='secondchild'>
-            {ct && <AnimatedNumber value='60' formatValue={formatValue} />}+
-            <div className='secondsubchild'>Layouts</div>
+            {ct && <AnimatedNumber value='650' formatValue={formatValue} />}+
+            <div className='secondsubchild'>Startups</div>
           </div>
         </motion.div>
       </Tilt>
       <Tilt>
         <motion.div
           whileHover={{
-            width: '17rem',
+            width: '16rem',
             height: '12rem',
           }}
           className='workCard'
@@ -80,8 +80,8 @@ const Workinfo = () => {
             <i className='bi bi-hdd-stack'></i>
           </div>
           <div className='secondchild'>
-            {ct && <AnimatedNumber value='375' formatValue={formatValue} />}
-            <div className='secondsubchild'>Projects</div>
+            {ct && <AnimatedNumber value='50' formatValue={formatValue} />}+
+            <div className='secondsubchild'>Investors & VCs</div>
           </div>
         </motion.div>
       </Tilt>

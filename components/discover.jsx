@@ -1,5 +1,6 @@
 import React from "react";
 import Link from 'next/link';
+import Aftermovie from "../assets/aftermovie.jpg"
 import { motion } from "framer-motion";
 const discover = () => {
   return (
@@ -63,9 +64,9 @@ const discover = () => {
           },
         }}
         className="sub02"
-        style={{ backgroundImage: "url(https://crust.winsomethemes.com/original-dark-elementor/wp-content/uploads/sites/70/2022/05/sec-bg.jpg)" }}
+        style={{ backgroundImage: `url(${Aftermovie.src})`}}
       >
-        <a href="https://www.youtube.com/watch?v=Uvo1SWXoNQo">
+        <a href="https://www.youtube.com/watch?v=Uvo1SWXoNQo" target="_framename">
           <div>
             <div className="Circle01"></div>
             <div className="Circle02">
