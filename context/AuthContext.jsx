@@ -16,6 +16,7 @@ const AuthContext = createContext();
 export const AuthContextProvider = ({ children }) => {
   const router = useRouter();
   const [user, setUser] = useState({});
+  const [isLoggingIn, setIsLoggingIn] = useState(false)
   const [isLoggedIn, setIsLoggedIn] = useState(user?.displayName);
   const handleGoogleSignIn = async () => {
     try {
@@ -38,11 +39,12 @@ export const AuthContextProvider = ({ children }) => {
   const userRegistration = async (googleUser) => {
     if (user?.name) return;
     if (googleUser?.displayName) {
+      setIsLoggingIn(true);
       const participantRef = doc(db, "participants", googleUser.uid);
       const participantSnap = await getDoc(participantRef);
       if (participantSnap.exists()) {
         console.log("Document data:", participantSnap.data());
-        setUser(participantSnap.data());
+        setUser(participantSnap.data(), () => setIsLoggingIn(false));
       } else {
         const newUser = {
           id: googleUser.uid,
@@ -55,16 +57,18 @@ export const AuthContextProvider = ({ children }) => {
           isRegistered: false
         };
         await setDoc(doc(db, "participants", newUser.id), newUser);
-        setUser(newUser);
+        setUser(newUser, () => setIsLoggingIn(false));
         console.log("No such document!");
       }
     }
+    setIsLoggingIn(false);
   };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       userRegistration(currentUser);
     });
+    if (user?.name) return;
     return () => {
       unsubscribe();
     };
@@ -85,7 +89,7 @@ export const AuthContextProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider
-      value={{ handleGoogleSignIn, user, logout, isLoggedIn, checkRegisteration }}
+      value={{ handleGoogleSignIn, user, logout, isLoggedIn, checkRegisteration, isLoggingIn }}
     >
       {children}
     </AuthContext.Provider>
