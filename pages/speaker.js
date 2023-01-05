@@ -7,7 +7,6 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 const Speaker = () => {
-  const temporary = [];
   // when you want to show speaker , replace temporary with Design in map function and remove coming soon
   return (
     <div>
@@ -16,9 +15,8 @@ const Speaker = () => {
       </Head>
       <Navbar />
       <div className={Style.heading}>Speakers</div>
-      <div className={Style.heading}>Coming soon...</div>
       <div className={Style.container}>
-        {temporary.map((data, index) => {
+        {Design.map((data, index) => {
           return (
             <>
               <motion.div
