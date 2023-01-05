@@ -16,7 +16,7 @@ import Image from "next/image"
 import style from "../styles/Navbar.module.scss"
 import { useRouter } from "next/router";
 
-const navItems = [{ name: "Home", page: "/" }, { name: "Events", page: "/events" }, { name: "Speakers", page: "/speaker" }, { name: "Sponsors", page: "/sponsors" }]
+const navItems = [{ name: "Home", page: "/" }, { name: "Events", page: "/events" }, { name: "Sponsors", page: "/sponsors" }]
 
 const LoggingInOverlay = () => {
   return (
