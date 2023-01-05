@@ -22,7 +22,7 @@ const LoggingInOverlay = () => {
   return (
     <div className={style.overlay}>
       <Loading color="success" textColor="success" type="gradient" size="lg">
-        Please Wait, Logging In...
+        Please Wait...
       </Loading>
     </div>
   )
